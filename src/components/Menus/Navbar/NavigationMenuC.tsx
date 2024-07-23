@@ -27,7 +27,7 @@ export function NavigationMenuC() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent text-primary-foreground text-md pr-0">
+          <NavigationMenuTrigger className="bg-transparent text-primary-foreground text-md rounded-full">
             Projects
           </NavigationMenuTrigger>
           <NavigationMenuContent>
