@@ -15,7 +15,7 @@ import {Accordion, AccordionItem} from "@/components/ui/accordion";
 import {Cross1Icon, HamburgerMenuIcon} from "@radix-ui/react-icons";
 import Link from "next/link";
 
-export function NavigationMenuMobileC() {
+export function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClose = () => setIsOpen(false);
