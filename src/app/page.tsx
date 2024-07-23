@@ -10,7 +10,7 @@ export default function Home() {
           Building Nature Communities
           </h1>
           <p className="mb-8 px-6 text-sm sm:text-lg">
-          Crafting Your Perfect Nature Homes
+          Invest in Tranquility, Live in Luxury
           </p>
           <div className="flex justify-center flex-row gap-6">
           <Link href="/">
