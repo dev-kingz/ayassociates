@@ -17,7 +17,7 @@ export default function Home() {
             <Button
               variant="secondary"
               size="lg"
-              className="shadow-xl bg-secondary text-white hover:bg-green-600"
+              className="shadow-xl bg-secondary text-white"
             >
               Enquire Now
             </Button>
