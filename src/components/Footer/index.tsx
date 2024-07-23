@@ -78,19 +78,16 @@ export function Footer() {
             <div className="flex flex-col mb-6 md:mb-0 items-center sm:items-start">
               <h2 className="text-xl font-semibold mb-3">Projects</h2>
               <nav className="flex flex-col space-y-2">
-                <Link
-                  href="/projects/holistic-royal-farms"
-                  className="hover:text-white/80"
-                >
+                <Link href="/projects/bunglows" className="hover:text-white/80">
                   Bungalows
                 </Link>
-                <Link href="/projects/trulife" className="hover:text-white/80">
-                  Farm Houses
-                </Link>
                 <Link
-                  href="/projects/holistic-bespoke"
+                  href="/projects/farm-houses"
                   className="hover:text-white/80"
                 >
+                  Farm Houses
+                </Link>
+                <Link href="/projects/na-plots" className="hover:text-white/80">
                   NA Plots
                 </Link>
               </nav>
