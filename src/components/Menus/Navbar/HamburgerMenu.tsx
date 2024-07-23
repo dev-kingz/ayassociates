@@ -1,8 +1,8 @@
 "use client";
 
 import * as React from "react";
-import {useState} from "react";
-import {Button} from "@/components/ui/button";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
@@ -11,11 +11,11 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import {Accordion, AccordionItem} from "@/components/ui/accordion";
-import {Cross1Icon, HamburgerMenuIcon} from "@radix-ui/react-icons";
+import { Accordion, AccordionItem } from "@/components/ui/accordion";
+import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
-export function NavigationMenuMobileC() {
+export function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClose = () => setIsOpen(false);
@@ -32,7 +32,9 @@ export function NavigationMenuMobileC() {
         />
         <div className="flex flex-col gap-8">
           <SheetHeader>
-            <SheetTitle className="text-start text-white">RK Tandoor</SheetTitle>
+            <SheetTitle className="text-start text-white">
+              RK Tandoor
+            </SheetTitle>
           </SheetHeader>
           <Accordion type="single" collapsible className="w-full">
             <Link href="/" className="text-white" onClick={handleClose}>
