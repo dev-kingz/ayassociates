@@ -108,7 +108,7 @@ export function HamburgerMenu() {
             className="my-6 rounded-full border-2 font-semibold px-3 py-2.5 bg-primary text-primary-foreground gap-2"
             asChild
           >
-            <Link href={"/shop"}>
+            <Link href={"/"}>
               <FaPhoneAlt />
               Call now
             </Link>
