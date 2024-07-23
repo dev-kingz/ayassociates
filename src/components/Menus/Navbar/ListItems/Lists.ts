@@ -1,20 +1,20 @@
 export const projectList: {title: string; href: string; description: string}[] = [
   {
     title: "Bunglows",
-    href: "/shop",
+    href: "/",
     description:
-      "Discover the latest additions to our collection, featuring cutting-edge designs and innovative cooking solutions.",
+      "Luxury bungalows, 2.5 hours from Mumbai. Modern and serene.",
   },
   {
     title: "Farm Houses",
-    href: "/shop?q=Electric%20Ovens",
+    href: "/",
     description:
-      "Explore our range of high-performance electric ovens, designed for efficiency and consistent cooking results.",
+      "Peaceful farmhouses near Mumbai. Ideal countryside retreat.",
   },
   {
     title: "NA Plots",
-    href: "/shop?q=Brick%20Ovens",
+    href: "/",
     description:
-      "Browse our handcrafted brick ovens, renowned for their durability and exceptional heat retention.",
+      "Prime plots in scenic locations. Build your dream home.",
   },
 ];
