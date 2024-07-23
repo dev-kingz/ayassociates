@@ -41,7 +41,9 @@ export function HamburgerMenu() {
         />
         <div className="flex flex-col gap-8">
           <SheetHeader>
-            <SheetTitle className="text-start">RK Tandoor</SheetTitle>
+            <SheetTitle className="text-start text-primary text-xl font-bold">
+              AY Associates
+            </SheetTitle>
           </SheetHeader>
           <Accordion type="single" collapsible className="w-full">
             <Link href="/" onClick={handleClose}>
