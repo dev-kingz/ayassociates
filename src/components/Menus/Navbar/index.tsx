@@ -41,7 +41,7 @@ export function Navbar() {
       </Link>
       <NavigationMenuC />
       <div className="flex items-center justify-center gap-2">
-        <Button className="font-semibold px-3 py-2.5 bg-primary rounded-full text-primary-foreground gap-2">
+        <Button className="font-semibold px-3 py-2.5 bg-secondary rounded-full text-primary-foreground gap-2">
           <FaPhoneAlt />
           Call Now
         </Button>
