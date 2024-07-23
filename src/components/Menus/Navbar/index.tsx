@@ -14,15 +14,15 @@ export function Navbar() {
       <div className="flex items-center justify-center">
         <NavigationMenuC />
       </div>
-      <Link href="/">
-        <Button
+        <Button asChild
           variant="secondary"
           size="lg"
           className="rounded-full shadow-xl bg-lime-800 text-white hover:text-lime-800"
         >
+      <Link href="/">
           Call Us
-        </Button>
       </Link>
+        </Button>
     </nav>
   );
 }

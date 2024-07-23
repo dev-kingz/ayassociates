@@ -9,9 +9,8 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
-import { Button } from "@/components/ui/button";
-import { IoIosArrowDown } from "react-icons/io";
 import { ListItem } from "@/components/Menus/Navbar/ListItems";
 
 export function NavigationMenuC() {
@@ -19,7 +18,7 @@ export function NavigationMenuC() {
     <NavigationMenu className="hidden sm:flex">
       <NavigationMenuList className="flex space-x-4 items-center">
         <NavigationMenuItem>
-          <Link href="/" passHref>
+          <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className="px-3 text-white hover:text-gray-300">
               Home
             </NavigationMenuLink>
@@ -27,29 +26,34 @@ export function NavigationMenuC() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="gap-3 p-6 md:w-[100px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/" title="Our Story"/>
-              <ListItem href="/" title="Blogs"/>
-              <ListItem href="/docs/primitives/typography" title="Careers"/>
+          <NavigationMenuTrigger className="bg-transparent text-primary-foreground">
+            About Us
+          </NavigationMenuTrigger>
+          <NavigationMenuContent className="">
+            <ul className="grid w-[200px] gap-3 p-4">
+              <ListItem href="/" title="Our Story" />
+              <ListItem href="/" title="Blogs" />
+              <ListItem href="/docs/primitives/typography" title="Careers" />
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
 
+        <NavigationMenuViewport />
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="bg-transparent text-primary-foreground">
+            Projects
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="gap-3 p-6 md:w-[100px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/" title="Trulife"/>
-              <ListItem href="/" title="Hoslistic Royal Farms"/>
-              <ListItem href="/" title="Evernest Prime"/>
+            <ul className="grid w-[200px] gap-3 p-4">
+              <ListItem href="/" title="Trulife" />
+              <ListItem href="/" title="Hoslistic Royal Farms" />
+              <ListItem href="/" title="Evernest Prime" />
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
-          <Link href="/bespoke" passHref>
+        <NavigationMenuItem asChild>
+          <Link href="/bespoke" legacyBehavior passHref>
             <NavigationMenuLink className="px-3 text-white hover:text-gray-300">
               Bespoke
             </NavigationMenuLink>
@@ -57,7 +61,7 @@ export function NavigationMenuC() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <Link href="/hospitality" passHref>
+          <Link href="/hospitality" legacyBehavior passHref>
             <NavigationMenuLink className="px-3 text-white hover:text-gray-300">
               Hospitality
             </NavigationMenuLink>
@@ -65,7 +69,7 @@ export function NavigationMenuC() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <Link href="/contact" passHref>
+          <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className="px-3 text-white hover:text-gray-300">
               Contact Us
             </NavigationMenuLink>

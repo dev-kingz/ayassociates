@@ -3,7 +3,6 @@ import "./globals.css";
 import { Navbar } from "@/components/Menus/Navbar";
 import { Footer } from "@/components/Footer";
 
-
 export const metadata: Metadata = {
   title: "AY Associates",
   description: "A Real Estate Company!",
@@ -16,10 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >
-      <div className="flex min-h-screen grow flex-col items-center justify-between self-stretch font-primary">
+      <body>
+        <div className="flex min-h-screen grow flex-col items-center justify-between self-stretch font-primary">
           <Navbar />
-          <main className="item-center flex grow justify-start self-stretch">{children}</main>
+          <main className="item-center flex grow justify-start self-stretch">
+            {children}
+          </main>
           <Footer />
         </div>
       </body>
