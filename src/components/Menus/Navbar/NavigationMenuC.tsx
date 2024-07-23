@@ -31,7 +31,7 @@ export function NavigationMenuC() {
             Projects
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid p-2 md:w-[200px] border-t-4 border-green-800">
+            <ul className="grid p-2 md:w-[230px] border-t-4 border-green-800">
               {projectList.map((projectItem) => (
                 <ListItem
                   key={projectItem.title}
