@@ -43,7 +43,7 @@ export function Footer() {
               <h1 className="text-3xl font-bold text-white">AY Associates</h1>
             </Link>
             <p className="mt-2 text-md">
-            Discover Your Dream Home with AY Associates
+              Discover Your Dream Home with AY Associates!
             </p>
           </div>
           <div className="QuickLinks flex flex-row gap-24">
@@ -76,7 +76,9 @@ export function Footer() {
               </nav>
             </div>
             <div className="flex flex-col mb-6 md:mb-0">
-              <h2 className="flex flex-col text-xl font-semibold mb-3">Projects</h2>
+              <h2 className="flex flex-col text-xl font-semibold mb-3">
+                Projects
+              </h2>
               <nav className="flex flex-col space-y-2">
                 <Link
                   href="/projects/holistic-royal-farms"
@@ -102,6 +104,6 @@ export function Footer() {
           <SocialIcons />
         </div>
       </section>
-    </footer >
+    </footer>
   );
 }
