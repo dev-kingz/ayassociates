@@ -20,7 +20,6 @@ import {
 import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { projectList } from "./ListItems/Lists";
-import { Description } from "@radix-ui/react-dialog";
 import { RiArrowRightWideFill } from "react-icons/ri";
 import { FaPhoneAlt } from "react-icons/fa";
 
@@ -56,7 +55,9 @@ export function HamburgerMenu() {
             </Link>
 
             <AccordionItem value="item-3" className="py-1.5">
-              <AccordionTrigger>Projects</AccordionTrigger>
+              <AccordionTrigger className="font-[400] text-base">
+                Projects
+              </AccordionTrigger>
               <AccordionContent className="flex flex-col justify-center items-start">
                 {projectList.map((projectItem) => (
                   <>
@@ -66,7 +67,7 @@ export function HamburgerMenu() {
                       onClick={handleClose}
                       className="flex items-center justify-center py-3 active:bg-neutral-200 active:text-accent active:scale-105"
                     >
-                      <div>
+                      <div className="flex flex-col gap-2">
                         <h3 className="text-sm font-medium leading-none">
                           {projectItem.title}
                         </h3>
