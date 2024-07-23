@@ -8,7 +8,7 @@ export function Footer() {
       <div className="relative flex flex-col md:flex-row md:justify-between md:items-center p-10 bg-green-800">
         <div className="flex flex-col space-y-4 self-stretch">
           <h1 className="text-2xl font-semibold">
-            We'd love to connect with you. Let's find your ideal space!
+            We&apos;d love to connect with you. Let&apos;s find your ideal space!
           </h1>
           <Link href="/">
             <Button
@@ -36,7 +36,7 @@ export function Footer() {
             <h1 className="text-2xl font-semibold text-white">HOLISTIC</h1>
           </Link>
           <p className="mt-2 text-sm">
-            Invest In Best Properties With Our Expert's Guidance
+            Invest In Best Properties With Our Expert&apos;s Guidance
           </p>
         </div>
         <div className="mb-6 md:mb-0">
