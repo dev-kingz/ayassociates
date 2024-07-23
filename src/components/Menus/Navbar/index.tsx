@@ -4,7 +4,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import { NavigationMenuC } from "./NavigationMenuC";
-import { NavigationMenuMobileC } from "./NavigationMenuMobileC";
+import { HamburgerMenu } from "./HamburgerMenu";
 import { Button } from "@/components/ui/button";
 import { FaPhoneAlt } from "react-icons/fa";
 
@@ -41,11 +41,11 @@ export function Navbar() {
       </Link>
       <NavigationMenuC />
       <div className="flex items-center justify-center gap-2">
-        <Button className="font-semibold px-3 py-2.5 bg-secondary rounded-full text-primary-foreground gap-2">
+        <Button className="font-medium px-3 py-2.5 bg-secondary rounded-full text-primary-foreground gap-2">
           <FaPhoneAlt />
           Call Now
         </Button>
-        <NavigationMenuMobileC />
+        <HamburgerMenu />
       </div>
     </nav>
   );

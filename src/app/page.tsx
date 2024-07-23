@@ -6,11 +6,11 @@ export default function Home() {
     <div className="flex grow flex-col items-center self-stretch">
       <section className="relative flex h-[80vh] grow items-center justify-center self-stretch bg-hero bg-cover bg-center pt-3 sm:h-[90vh]">
         <div className="text-center text-white">
-          <h1 className="mb-4 px-4 text-3xl font-bold sm:text-6xl">
+          <h1 className="mb-4 px-4 text-4xl font-semibod sm:text-6xl">
           Building Nature Communities
           </h1>
           <p className="mb-8 px-6 text-sm sm:text-lg">
-          Crafting Your Perfect Nature Homes
+          Invest in Tranquility, Live in Luxury
           </p>
           <div className="flex justify-center flex-row gap-6">
           <Link href="/">

@@ -14,7 +14,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        primary: ["Montserrat", "Graphik", "sans-serif"],
+        primary: ["PT serif", "Graphik", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

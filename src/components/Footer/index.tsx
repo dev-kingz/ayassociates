@@ -43,7 +43,7 @@ export function Footer() {
               <h1 className="text-3xl font-bold text-white">AY Associates</h1>
             </Link>
             <p className="mt-2 text-md">
-              Invest In Best Properties With Our Expert&apos;s Guidance
+              Discover Your Dream Home with AY Associates!
             </p>
           </div>
           <div className="QuickLinks flex flex-col sm:flex-row gap-6 sm:gap-24 text-center md:text-left">
