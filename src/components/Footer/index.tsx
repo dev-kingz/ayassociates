@@ -40,10 +40,10 @@ export function Footer() {
         <div className="Content py-4 flex flex-row justify-between">
           <div className="Logo&Text mb-6 md:mb-0">
             <Link href="/">
-              <h1 className="text-3xl font-bold text-white">HOLISTIC</h1>
+              <h1 className="text-3xl font-bold text-white">AY Associates</h1>
             </Link>
             <p className="mt-2 text-md">
-              Invest In Best Properties With Our Expert&apos;s Guidance
+            Discover Your Dream Home with AY Associates
             </p>
           </div>
           <div className="QuickLinks flex flex-row gap-24">
