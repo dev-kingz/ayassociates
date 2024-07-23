@@ -69,6 +69,10 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundImage: {
+        hero: "url('/gallery/backgrounds/hero.jpg')",
+        footer: "url('/gallery/backgrounds/footer.jpg')",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
