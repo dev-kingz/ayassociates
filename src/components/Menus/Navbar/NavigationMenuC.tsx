@@ -46,7 +46,7 @@ export function NavigationMenuC() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <Link href="/gallery" legacyBehavior passHref>
+          <Link href="/about" legacyBehavior passHref>
             <NavigationMenuLink className="text-primary-foreground hover:text-gray-300">
               About Us
             </NavigationMenuLink>
