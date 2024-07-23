@@ -72,7 +72,7 @@ export function HamburgerMenu() {
                           {projectItem.description}
                         </p>
                       </div>
-                      <RiArrowRightWideFill />
+                      <RiArrowRightWideFill className="fill-primary w-6 h-6" />
                     </Link>
                   </>
                 ))}
