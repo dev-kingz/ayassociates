@@ -29,48 +29,7 @@ export function Footer() {
           </Link>
           <p className="mt-2 text-sm">Invest In Best Properties With Our Expert's Guidance</p>
         </div>
-        <div className="mb-6 md:mb-0">
-          <h2 className="text-xl font-medium mb-3">Company</h2>
-          <nav className="space-y-2">
-            <Link href="/about">
-              <a className="hover:text-white/80">About Us</a>
-            </Link>
-            <Link href="/careers">
-              <a className="hover:text-white/80">Careers</a>
-            </Link>
-            <Link href="/privacy">
-              <a className="hover:text-white/80">Privacy Policy</a>
-            </Link>
-          </nav>
-        </div>
-        <div className="mb-6 md:mb-0">
-          <h2 className="text-xl font-medium mb-3">Contact Us</h2>
-          <nav className="space-y-2">
-            <Link href="/contact">
-              <a className="hover:text-white/80">Contact</a>
-            </Link>
-            <Link href="/email">
-              <a className="hover:text-white/80">Email Us</a>
-            </Link>
-            <Link href="/message">
-              <a className="hover:text-white/80">Message Us</a>
-            </Link>
-          </nav>
-        </div>
-        <div>
-          <h2 className="text-xl font-medium mb-3">Projects</h2>
-          <nav className="space-y-2">
-            <Link href="/projects/holistic-royal-farms">
-              <a className="hover:text-white/80">Holistic Royal Farms</a>
-            </Link>
-            <Link href="/projects/trulife">
-              <a className="hover:text-white/80">Trulife</a>
-            </Link>
-            <Link href="/projects/holistic-bespoke">
-              <a className="hover:text-white/80">Holistic Bespoke</a>
-            </Link>
-          </nav>
-        </div>
+        
       </div>
     </footer>
   );
