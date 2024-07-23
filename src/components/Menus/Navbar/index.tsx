@@ -4,7 +4,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import { NavigationMenuC } from "./NavigationMenuC";
-import { NavigationMenuMobileC } from "./NavigationMenuMobileC";
+import { HamburgerMenu } from "./HamburgerMenu";
 import { Button } from "@/components/ui/button";
 import { FaPhoneAlt } from "react-icons/fa";
 
@@ -45,7 +45,7 @@ export function Navbar() {
           <FaPhoneAlt />
           Call Now
         </Button>
-        <NavigationMenuMobileC />
+        <HamburgerMenu />
       </div>
     </nav>
   );
