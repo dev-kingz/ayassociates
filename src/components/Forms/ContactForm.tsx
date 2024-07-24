@@ -14,7 +14,6 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { IoCheckmarkDoneCircleOutline } from "react-icons/io5";
 import { Input } from "@/components/ui/input";
 import { useToast } from "../ui/use-toast";
 
@@ -49,12 +48,7 @@ const ContactForm = () => {
     // Display successful toast message.
     toast({
       variant: "success",
-      title: (
-        <div className="flex">
-          <IoCheckmarkDoneCircleOutline className="w-6 h-6 mr-2 text-foreground" />
-          <p>Successful!</p>
-        </div>
-      ),
+      title: "Successful!",
       description: "Your form has been submitted.",
     });
     console.log(values);
