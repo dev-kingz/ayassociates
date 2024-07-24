@@ -1,0 +1,15 @@
+import React from 'react';
+
+const SectionHeader = () => {
+    return (
+        <div className="w-full flex-col justify-start items-start inline-flex gap-3">
+            <div className="flex justify-start items-center gap-4">
+                <div className="w-24 h-1 bg-secondary" />
+                <div className="text-secondary text-xl font-normal font-['Poppins']">About us</div>
+            </div>
+            <div className="self-stretch text-lime-950 text-4xl font-medium">About AY Associates Nature Homes</div>
+        </div>
+    );
+};
+
+export default SectionHeader;
