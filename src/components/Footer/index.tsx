@@ -5,9 +5,9 @@ import SocialIcons from "../Icons/SocialIcons";
 
 export function Footer() {
   return (
-    <footer className="Footer flex w-full flex-col bg-neutral-950 text-white">
-      <section className="TopSection relative flex flex-col md:flex-row md:justify-between md:items-center pt-8 sm:py-10 sm:px-36 bg-primary">
-        <div className="flex flex-col self-stretch items-center sm:items-start gap-6 md:gap-12 px-8 ">
+    <footer className="Footer flex w-full flex-col text-white">
+      <section className="TopSection relative flex flex-col md:flex-row md:justify-between md:items-center pt-8 sm:py-10 sm:px-36 bg-primary mt-44">
+        <div className="flex flex-col self-stretch items-center sm:items-start gap-6 md:gap-12 px-8">
           <div className="TopSectionText flex flex-col gap-2 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl font-medium">
               We&apos;d love to connect with you.
