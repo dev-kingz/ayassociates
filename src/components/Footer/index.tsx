@@ -50,13 +50,13 @@ export function Footer() {
             <div className="flex flex-col mb-6 md:mb-0 items-center sm:items-start">
               <h2 className="text-xl font-semibold mb-3">Company</h2>
               <nav className="flex flex-col space-y-2">
-                <Link href="/about" className="hover:text-white/80">
+                <Link href="/about" className="hover:text-white/80 font-secondary">
                   About Us
                 </Link>
-                <Link href="/careers" className="hover:text-white/80">
+                <Link href="/careers" className="hover:text-white/80 font-secondary">
                   Careers
                 </Link>
-                <Link href="/privacy" className="hover:text-white/80">
+                <Link href="/privacy" className="hover:text-white/80 font-secondary">
                   Privacy Policy
                 </Link>
               </nav>
@@ -64,13 +64,13 @@ export function Footer() {
             <div className="flex flex-col mb-6 md:mb-0 items-center sm:items-start">
               <h2 className="text-xl font-semibold mb-3">Contact Us</h2>
               <nav className="flex flex-col space-y-2">
-                <Link href="/contact" className="hover:text-white/80">
+                <Link href="/contact" className="hover:text-white/80 font-secondary">
                   Contact
                 </Link>
-                <Link href="/email" className="hover:text-white/80">
+                <Link href="/email" className="hover:text-white/80 font-secondary">
                   Email Us
                 </Link>
-                <Link href="/message" className="hover:text-white/80">
+                <Link href="/message" className="hover:text-white/80 font-secondary">
                   Message Us
                 </Link>
               </nav>
@@ -78,16 +78,20 @@ export function Footer() {
             <div className="flex flex-col mb-6 md:mb-0 items-center sm:items-start">
               <h2 className="text-xl font-semibold mb-3">Projects</h2>
               <nav className="flex flex-col space-y-2">
-                <Link href="/projects/bunglows" className="hover:text-white/80">
+                <Link
+                  href="/projects/bunglows"
+                  className="hover:text-white/80 font-secondary">
                   Bungalows
                 </Link>
                 <Link
                   href="/projects/farm-houses"
-                  className="hover:text-white/80"
+                  className="hover:text-white/80 font-secondary"
                 >
                   Farm Houses
                 </Link>
-                <Link href="/projects/na-plots" className="hover:text-white/80">
+                <Link
+                  href="/projects/na-plots"
+                  className="hover:text-white/80 font-secondary">
                   NA Plots
                 </Link>
               </nav>
