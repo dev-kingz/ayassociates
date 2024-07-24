@@ -5,9 +5,9 @@ import SocialIcons from "../Icons/SocialIcons";
 
 export function Footer() {
   return (
-    <footer className="Footer flex w-full flex-col bg-neutral-950 text-white">
-      <section className="TopSection relative flex flex-col md:flex-row md:justify-between md:items-center pt-8 sm:py-10 sm:px-36 bg-primary">
-        <div className="flex flex-col self-stretch items-center sm:items-start gap-6 md:gap-12 px-8 ">
+    <footer className="Footer flex w-full flex-col text-white">
+      <section className="TopSection relative flex flex-col md:flex-row md:justify-between md:items-center pt-8 sm:py-10 sm:px-36 bg-primary mt-44">
+        <div className="flex flex-col self-stretch items-center sm:items-start gap-6 md:gap-12 px-8">
           <div className="TopSectionText flex flex-col gap-2 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl font-medium">
               We&apos;d love to connect with you.
@@ -20,7 +20,7 @@ export function Footer() {
             <Button
               variant="secondary"
               size="lg"
-              className="bg-secondary text-white hover:text-white"
+              className="bg-secondary text-white"
             >
               Instant Callback
             </Button>
@@ -50,13 +50,22 @@ export function Footer() {
             <div className="flex flex-col mb-6 md:mb-0 items-center sm:items-start">
               <h2 className="text-xl font-semibold mb-3">Company</h2>
               <nav className="flex flex-col space-y-2">
-                <Link href="/about" className="hover:text-white/80">
+                <Link
+                  href="/about"
+                  className="hover:text-white/80 font-secondary"
+                >
                   About Us
                 </Link>
-                <Link href="/careers" className="hover:text-white/80">
+                <Link
+                  href="/careers"
+                  className="hover:text-white/80 font-secondary"
+                >
                   Careers
                 </Link>
-                <Link href="/privacy" className="hover:text-white/80">
+                <Link
+                  href="/privacy"
+                  className="hover:text-white/80 font-secondary"
+                >
                   Privacy Policy
                 </Link>
               </nav>
@@ -64,13 +73,22 @@ export function Footer() {
             <div className="flex flex-col mb-6 md:mb-0 items-center sm:items-start">
               <h2 className="text-xl font-semibold mb-3">Contact Us</h2>
               <nav className="flex flex-col space-y-2">
-                <Link href="/contact" className="hover:text-white/80">
+                <Link
+                  href="/contact"
+                  className="hover:text-white/80 font-secondary"
+                >
                   Contact
                 </Link>
-                <Link href="/email" className="hover:text-white/80">
+                <Link
+                  href="/email"
+                  className="hover:text-white/80 font-secondary"
+                >
                   Email Us
                 </Link>
-                <Link href="/message" className="hover:text-white/80">
+                <Link
+                  href="/message"
+                  className="hover:text-white/80 font-secondary"
+                >
                   Message Us
                 </Link>
               </nav>
@@ -78,16 +96,22 @@ export function Footer() {
             <div className="flex flex-col mb-6 md:mb-0 items-center sm:items-start">
               <h2 className="text-xl font-semibold mb-3">Projects</h2>
               <nav className="flex flex-col space-y-2">
-                <Link href="/projects/bunglows" className="hover:text-white/80">
+                <Link
+                  href="/projects/bunglows"
+                  className="hover:text-white/80 font-secondary"
+                >
                   Bungalows
                 </Link>
                 <Link
                   href="/projects/farm-houses"
-                  className="hover:text-white/80"
+                  className="hover:text-white/80 font-secondary"
                 >
                   Farm Houses
                 </Link>
-                <Link href="/projects/na-plots" className="hover:text-white/80">
+                <Link
+                  href="/projects/na-plots"
+                  className="hover:text-white/80 font-secondary"
+                >
                   NA Plots
                 </Link>
               </nav>
