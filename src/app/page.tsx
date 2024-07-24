@@ -57,10 +57,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="About px-8 sm:px-24 py-12 flex flex-col sm:flex-row items-start justify-between bg-white gap-5 sm:gap-12 ">
+      <section className="About px-8 sm:px-48 py-12 flex flex-col sm:flex-row items-start justify-between bg-white gap-5 sm:gap-36 ">
         <SectionHeader />
         <div className="flex flex-col gap-6 max-w-lg">
-          <p className="text-left text-gray-600 text-md font-normal font-['Poppins'] leading-9">
+          <p className="text-left text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9">
             Holistic Group specializes in building communities and providing end-to-end solutions to customers aspiring for a nature-centric lifestyle. We Design, Build, Develop & Manage these communities.
             In five years, the successful delivery of four projects is a testament to our commitment to a Nature-Centric Lifestyle as a tangible and compelling reality for our valued customers.
             We specialize in creating spaces that seamlessly blend with nature, offering bespoke designs for homes, unparalleled hospitality experiences, and thoughtful solutions for senior living.
@@ -69,7 +69,7 @@ export default function Home() {
             <Button
               variant="secondary"
               size="lg"
-              className="shadow-xl bg-green-800 text-white"
+              className="shadow-xl bg-secondary text-white"
             >
               Learn More
             </Button>
