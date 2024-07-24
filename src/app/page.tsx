@@ -9,7 +9,7 @@ export default function Home() {
           <h1 className="mb-4 px-4 text-4xl font-semibod sm:text-6xl">
           Building Nature Communities
           </h1>
-          <p className="mb-8 px-6 text-sm sm:text-lg">
+          <p className="mb-8 px-6 text-sm sm:text-lg font-secondary">
           Invest in Tranquility, Live in Luxury
           </p>
           <div className="flex justify-center flex-row gap-6">
