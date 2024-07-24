@@ -1,3 +1,4 @@
+import ContactForm from "@/components/Forms/ContactForm";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
@@ -21,8 +22,10 @@ const ContactPage = () => {
         </Button>
       </section>
       <section className="ContactUsSection flex items-center justify-center self-stretch grow py-10 px-8 sm:px-14">
-        <div className="ContactUsForm flex items-center justify-center flex-col grow self-stretch"></div>
-        <div className="ContactUsFormImage flex items-center justify-center flex-col grow relative self-stretch">
+        <div className="ContactUsForm flex items-center justify-center flex-col grow self-stretch basis-1/2">
+          <ContactForm />
+        </div>
+        <div className="ContactUsFormImage flex items-center justify-center flex-col grow relative self-stretch basis-1/2">
           <Image
             src="/gallery/images/ContactUsForm.png"
             alt="Contact Us"
@@ -44,7 +47,7 @@ const ContactPage = () => {
         </div>
         <div className="LocationCards self-stretch flex items-center justify-center grow py-14 px-8 sm:px-14 gap-10">
           {LocationList.map((location) => (
-            <div className="LocationCard text-secondary border border-secondary shadow flex items-start p-5 rounded-md justify-center flex-col gap-2">
+            <div key={location.title} className="LocationCard text-secondary border border-secondary shadow flex items-start p-5 rounded-md justify-center flex-col gap-2">
               <LuMapPin className="w-10 h-10" />
               <h2 className="text-xl font-semibold">{location.title}</h2>
               <h2 className="font-secondary text-sm">{location.address}</h2>
