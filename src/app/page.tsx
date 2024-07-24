@@ -1,3 +1,4 @@
+import { ProductsServicesAccordian } from "@/components/Accordian/ProductsServicesAccordian";
 import {Button} from "@/components/ui/button"
 import Link from "next/link";
 
@@ -33,6 +34,9 @@ export default function Home() {
           </Link>
           </div>
         </div>
+      </section>
+      <section className="flex flex-col items-center justify-center self-stretch p-8 w-[800px]">
+      <ProductsServicesAccordian/>
       </section>
     </div>
   );
