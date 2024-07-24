@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/Menus/Navbar";
 import { Footer } from "@/components/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: "AY Associates",
@@ -23,6 +24,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
+        <Toaster />
       </body>
     </html>
   );
