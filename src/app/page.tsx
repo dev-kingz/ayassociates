@@ -1,3 +1,4 @@
+import TitleHeader from "@/components/Header/TitleHeader";
 import {Button} from "@/components/ui/button"
 import Link from "next/link";
 
@@ -34,6 +35,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <TitleHeader titleText="Our Story" subTitleText="At AY Associates Nature Homes" titleColor="text-black" subTitleColor="text-black"/>
     </div>
   );
 }
