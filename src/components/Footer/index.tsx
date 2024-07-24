@@ -20,7 +20,7 @@ export function Footer() {
             <Button
               variant="secondary"
               size="lg"
-              className="bg-secondary text-white hover:text-white"
+              className="bg-secondary text-white"
             >
               Instant Callback
             </Button>
@@ -50,13 +50,22 @@ export function Footer() {
             <div className="flex flex-col mb-6 md:mb-0 items-center sm:items-start">
               <h2 className="text-xl font-semibold mb-3">Company</h2>
               <nav className="flex flex-col space-y-2">
-                <Link href="/about" className="hover:text-white/80 font-secondary">
+                <Link
+                  href="/about"
+                  className="hover:text-white/80 font-secondary"
+                >
                   About Us
                 </Link>
-                <Link href="/careers" className="hover:text-white/80 font-secondary">
+                <Link
+                  href="/careers"
+                  className="hover:text-white/80 font-secondary"
+                >
                   Careers
                 </Link>
-                <Link href="/privacy" className="hover:text-white/80 font-secondary">
+                <Link
+                  href="/privacy"
+                  className="hover:text-white/80 font-secondary"
+                >
                   Privacy Policy
                 </Link>
               </nav>
@@ -64,13 +73,22 @@ export function Footer() {
             <div className="flex flex-col mb-6 md:mb-0 items-center sm:items-start">
               <h2 className="text-xl font-semibold mb-3">Contact Us</h2>
               <nav className="flex flex-col space-y-2">
-                <Link href="/contact" className="hover:text-white/80 font-secondary">
+                <Link
+                  href="/contact"
+                  className="hover:text-white/80 font-secondary"
+                >
                   Contact
                 </Link>
-                <Link href="/email" className="hover:text-white/80 font-secondary">
+                <Link
+                  href="/email"
+                  className="hover:text-white/80 font-secondary"
+                >
                   Email Us
                 </Link>
-                <Link href="/message" className="hover:text-white/80 font-secondary">
+                <Link
+                  href="/message"
+                  className="hover:text-white/80 font-secondary"
+                >
                   Message Us
                 </Link>
               </nav>
@@ -80,7 +98,8 @@ export function Footer() {
               <nav className="flex flex-col space-y-2">
                 <Link
                   href="/projects/bunglows"
-                  className="hover:text-white/80 font-secondary">
+                  className="hover:text-white/80 font-secondary"
+                >
                   Bungalows
                 </Link>
                 <Link
@@ -91,7 +110,8 @@ export function Footer() {
                 </Link>
                 <Link
                   href="/projects/na-plots"
-                  className="hover:text-white/80 font-secondary">
+                  className="hover:text-white/80 font-secondary"
+                >
                   NA Plots
                 </Link>
               </nav>
