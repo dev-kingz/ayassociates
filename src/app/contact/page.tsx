@@ -10,19 +10,22 @@ const ContactPage = () => {
   return (
     <div className="ContactPage flex grow flex-col items-center justify-center self-stretch">
       <section className="relative flex h-[80vh] grow items-center justify-center self-stretch bg-hero bg-cover bg-center pt-3 sm:h-[90vh]"></section>
-      <section className="flex items-center justify-between py-6 px-8 sm:px-14 gap-4 self-stretch">
-        <Button size={"lg"} className="grow flex gap-2 h-12 text-base">
+
+      <section className="ContactUsCTAs flex items-center sm:justify-between py-6 px-3 sm:px-14 gap-1 sm:gap-4 self-stretch">
+        <Button className="grow px-2 sm:px-2 flex gap-2 sm:h-12 text-sm sm:text-base">
           <FaWhatsapp className="w-6 h-6" /> WhatsApp
         </Button>
-        <Button size={"lg"} className="grow flex gap-2 h-12 text-base">
+        <Button className="grow px-2 sm:px-2 flex gap-2 sm:h-12 text-sm sm:text-base">
           <MdOutlineEmail className="w-6 h-6" /> Mail
         </Button>
-        <Button size={"lg"} className="grow flex gap-2 h-12 text-base">
+        <Button className="grow px-2 sm:px-2 flex gap-2 sm:h-12 text-sm sm:text-base">
           <LuMapPin className="w-6 h-6" /> Locate
         </Button>
       </section>
-      <section className="ContactUsSection flex items-center justify-center self-stretch grow py-10 px-8 sm:px-14">
+
+      <section className="ContactUsSection flex flex-col gap-8 sm:gap-0 sm:flex-row items-center justify-center self-stretch grow py-10 px-8 sm:px-14">
         <div className="ContactUsForm flex items-center justify-center flex-col grow self-stretch basis-1/2">
+        {/* Put Section Header Here */}
           <ContactForm />
         </div>
         <div className="ContactUsFormImage flex items-center justify-center flex-col grow relative self-stretch basis-1/2">
@@ -36,7 +39,7 @@ const ContactPage = () => {
         </div>
       </section>
       <section className="ContactUsSection flex items-center justify-center flex-col self-stretch grow">
-        <div className="Title flex items-center justify-center flex-col grow gap-2">
+        <div className="Title flex items-center justify-center flex-col grow gap-2 text-center">
           <h2 className="text-2xl sm:text-4xl font semibold text-primary leading-snug">
             Main Office
           </h2>
@@ -45,20 +48,31 @@ const ContactPage = () => {
             Mumbai, Maharashtra 400703
           </h2>
         </div>
-        <div className="LocationCards self-stretch flex items-center justify-center grow py-14 px-8 sm:px-14 gap-10">
+        <div className="LocationCards self-stretch flex flex-col sm:flex-row items-center justify-center grow py-14 px-8 sm:px-14 gap-10">
           {LocationList.map((location) => (
-            <div key={location.title} className="LocationCard text-secondary border border-secondary shadow flex items-start p-5 rounded-md justify-center flex-col gap-2">
+            <div
+              key={location.title}
+              className="LocationCard text-secondary border border-secondary shadow flex items-start p-5 rounded-md justify-center flex-col gap-2"
+            >
               <LuMapPin className="w-10 h-10" />
               <h2 className="text-xl font-semibold">{location.title}</h2>
               <h2 className="font-secondary text-sm">{location.address}</h2>
             </div>
           ))}
         </div>
-        <div className="CTAs self-stretch flex items-center justify-center grow py-10 px-8 sm:px-14 gap-10">
-          <Button variant={"secondary"} size={"lg"} className="flex gap-2 h-12">
+        <div className="CTAs self-stretch flex flex-col sm:flex-row items-center justify-center grow py-10 px-8 sm:px-14 gap-10">
+          <Button
+            variant={"secondary"}
+            size={"lg"}
+            className="self-stretch sm:self-auto flex gap-2 h-12"
+          >
             <FaWhatsapp className="w-6 h-6" /> View on Google Maps
           </Button>
-          <Button variant={"secondary"} size={"lg"} className="flex gap-2 h-12">
+          <Button
+            variant={"secondary"}
+            size={"lg"}
+            className="self-stretch sm:self-auto flex gap-2 h-12"
+          >
             <MdOutlineEmail className="w-6 h-6" /> Schedule a Tour
           </Button>
         </div>
