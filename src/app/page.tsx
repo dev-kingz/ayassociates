@@ -1,6 +1,8 @@
-import TitleHeader from "@/components/Header/TitleHeader";
-import { Button } from "@/components/ui/button"
+import {Button} from "@/components/ui/button"
 import Link from "next/link";
+import { MdSecurity } from "react-icons/md";
+import { GrUserManager } from "react-icons/gr";
+import { FaMapLocationDot, FaHouseChimney  } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -35,7 +37,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <TitleHeader image="/gallery/backgrounds/hero.jpg" titleText="Our Story" subTitleText="At AY Associates Nature Homes" />
     </div>
   );
 }
