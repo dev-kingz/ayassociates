@@ -39,13 +39,13 @@ export default function Home() {
         </div>
       </section>
       <section className="WhyChooseUs px-12 py-8 lex flex-col items-center justify-center self-stretch ">
-        <div className="Header justify-center flex flex-col items-center gap-2 sm:gap-4">
+        <div className="Header justify-center flex flex-col items-center gap-2 sm:gap-6">
           <h2 className="text-2xl sm:text-4xl font-semibold text-secondary">Why Choose Us?</h2>
           <p className="px-30 sm:px-80 text-center text-sm sm:text-md text-gray-500">
             We provide end to end solutions & undertake Design, Approval, Procurement, Construction and Maintenance of all projects with our in house team of experts
           </p>
         </div>
-        <div className="Cards py-4 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
+        <div className="Cards py-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
           <IconTextCard Icon={MdSecurity} title="Secured & Fenced" text="Round-the-Clock Safety and Security for All" bgColor="bg-secondary" />
           <IconTextCard Icon={GrUserManager} title="Managed & Maintained" text="Hassle Free & Cost Effective" bgColor="bg-white" />
           <IconTextCard Icon={FaMapLocationDot} title="Prime Location & Smart Investment" text="Connectivity & Well-Thought-Out Returns" bgColor="bg-secondary" />
