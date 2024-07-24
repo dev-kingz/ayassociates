@@ -63,6 +63,7 @@ export function HamburgerMenu() {
                   <>
                     <div className="h-[1px] bg-neutral-200 self-stretch"></div>
                     <Link
+                      key={projectItem.title}
                       href={projectItem.href}
                       onClick={handleClose}
                       className="flex items-center justify-center py-3 active:bg-neutral-200 active:text-accent active:scale-105"
