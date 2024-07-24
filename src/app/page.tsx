@@ -58,7 +58,7 @@ export default function Home() {
         </div>
       </section>
       <section className="About px-8 sm:px-48 py-12 flex flex-col sm:flex-row items-start justify-between bg-white gap-5 sm:gap-36 ">
-        <SectionHeader />
+        <SectionHeader title="About Us" subTitle="About Holistic Nature Homes" titleColor="text-secondary" subTitleColor="text-lime-950"/>
       </section>
     </div>
   );
