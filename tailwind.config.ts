@@ -15,6 +15,7 @@ const config = {
     extend: {
       fontFamily: {
         primary: ["PT serif", "Graphik", "sans-serif"],
+        secondary: ["Open Sans"]
       },
       colors: {
         border: "hsl(var(--border))",
