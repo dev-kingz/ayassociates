@@ -3,6 +3,7 @@ import Link from "next/link";
 import { MdSecurity } from "react-icons/md";
 import { GrUserManager } from "react-icons/gr";
 import { FaMapLocationDot, FaHouseChimney  } from "react-icons/fa6";
+import TitleHeader from "@/components/Header/TitleHeader";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <TitleHeader image="/gallery/backgrounds/hero.jpg" titleText="Our Story" subTitleText="at AY Associates Nature Homes" />
     </div>
   );
 }
