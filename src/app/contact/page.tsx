@@ -7,7 +7,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const ContactPage = () => {
   return (
-    <div className="flex grow flex-col items-center justify-center self-stretch">
+    <div className="ContactPage flex grow flex-col items-center justify-center self-stretch">
       <section className="relative flex h-[80vh] grow items-center justify-center self-stretch bg-hero bg-cover bg-center pt-3 sm:h-[90vh]"></section>
       <section className="flex items-center justify-between py-6 px-8 sm:px-14 gap-4 self-stretch">
         <Button size={"lg"} className="grow flex gap-2 h-12 text-base">
