@@ -5,7 +5,7 @@ import { MdSecurity } from "react-icons/md";
 import { GrUserManager } from "react-icons/gr";
 import { FaMapLocationDot, FaHouseChimney } from "react-icons/fa6";
 import { ProductsServicesAccordian } from "@/components/Accordian/ProductsServicesAccordian";
-import SectionHeader from "@/components/Header/SectionHeader";
+import IconTextCard from "@/components/Cards/IconTextCard";
 
 export default function Home() {
   return (
