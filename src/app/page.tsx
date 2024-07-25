@@ -81,6 +81,11 @@ export default function Home() {
         </div>
         <ProductsServicesCarousel/>
       </section>
+
+      <section className="ChooseProject px-8 md:px-24 lg:px-52 py-8 flex flex-col items-center justify-center self-stretch gap-11">
+        <SectionHeader title="Choose Your Project" subTitle="Discover Your Ideal Nature Home" titleColor="text-secondary" subTitleColor="text-lime-900" />
+        <ChooseProjectCarousel />
+      </section>
     </div>
   );
 }
