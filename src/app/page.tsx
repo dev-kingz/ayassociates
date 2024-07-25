@@ -4,6 +4,9 @@ import Link from "next/link";
 import { MdSecurity } from "react-icons/md";
 import { GrUserManager } from "react-icons/gr";
 import { FaMapLocationDot, FaHouseChimney  } from "react-icons/fa6";
+import IconTextCard from "@/components/Cards/IconTextCard";
+import { ProductsServicesAccordian } from "@/components/Accordian/ProductsServicesAccordian";
+import { ProductsServicesCarousel } from "@/components/Carousel/ProductsServicesCarousel";
 
 export default function Home() {
   return (
