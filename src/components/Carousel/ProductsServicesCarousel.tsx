@@ -25,12 +25,12 @@ export function ProductsServicesCarousel() {
     plugins={[plugin.current]}
     onMouseEnter={plugin.current.stop}
     onMouseLeave={plugin.current.reset}
-    className="w-[440px] h-[400px]">
+    className=" w-[310px] sm:w-[440px] h-[400px]">
       <CarouselContent>
         {images.map((image, index) => (
-          <CarouselItem key={index} className=" h-full"> {/* Ensure full width and height */}
-            <div className="w-full h-full"> {/* Ensure the height is fully used */}
-              <Card className="w-full h-[500px]"> {/* Fixed width and full height */}
+          <CarouselItem key={index} className=" h-full">
+            <div className="w-full h-full"> 
+              <Card className="w-full h-[360px] sm:h-[500px]"> 
                 <CardContent className="flex items-center justify-center h-full p-0"> {/* Removed padding */}
                   <img src={image} alt={`Image ${index + 1}`} className="rounded-lg w-full h-full object-cover" />
                 </CardContent>

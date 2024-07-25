@@ -74,8 +74,8 @@ export default function Home() {
           <IconTextCard Icon={FaHouseChimney} title="Integrated Resort Community Estates" text="Robust Amenities & Infrastructure" bgColor="bg-white" />
         </div>
       </section>
-      <section className="flex flex-row items-start justify-center self-stretch px-2 py-8 gap-36">
-        <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-12">
+      <section className="flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-8 sm:px-2 py-8 gap-8 sm:gap-36">
+        <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-4 sm:gap-12">
         <SectionHeader title="Our Products & Services" subTitle="Explore Our Diverse Properties" titleColor="text-secondary" subTitleColor="text-lime-900" />
         <ProductsServicesAccordian />
         </div>

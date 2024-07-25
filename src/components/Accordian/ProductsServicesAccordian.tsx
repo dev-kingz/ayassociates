@@ -9,7 +9,7 @@ export function ProductsServicesAccordian() {
     return (
         <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-                <AccordionTrigger className="text-secondary text-2xl">01. Farm Community Layouts</AccordionTrigger>
+                <AccordionTrigger className="text-secondary text-lg sm:text-2xl">01. Farm Community Layouts</AccordionTrigger>
                 <AccordionContent className="flex flex-col px-10 gap-3">
                     <p className="text-md text-gray-600">
                         1/2 & 1 Acre Units
@@ -20,7 +20,7 @@ export function ProductsServicesAccordian() {
                 </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-                <AccordionTrigger className="text-secondary text-2xl">02. Gated Community Project</AccordionTrigger>
+                <AccordionTrigger className="text-secondary text-lg sm:text-2xl">02. Gated Community Project</AccordionTrigger>
                 <AccordionContent className="flex flex-col px-10 gap-3">
                     <p className="text-md text-gray-600">
                         2, 3 & 4 Bed Villas
@@ -31,7 +31,7 @@ export function ProductsServicesAccordian() {
                 </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-                <AccordionTrigger className="text-secondary text-2xl">03. Bespoke Villas & Farmhouses</AccordionTrigger>
+                <AccordionTrigger className="text-secondary text-lg sm:text-2xl">03. Bespoke Villas & Farmhouses</AccordionTrigger>
                 <AccordionContent className="flex flex-col px-10 gap-3">
                     <p className="text-md text-gray-600">
                         Villas & Farmhouses
