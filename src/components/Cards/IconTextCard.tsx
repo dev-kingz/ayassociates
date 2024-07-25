@@ -14,7 +14,7 @@ const IconTextCard: React.FC<IconTextCardProps> = ({ Icon, title, text, bgColor 
   const iconColor = bgColor === 'bg-white' ? 'text-secondary' : 'text-white';
 
   return (
-    <div className={`w-[330px] sm:w-[250px] h-[195px] sm:h-[300px] px-6 py-4 sm:py-7 flex flex-col rounded-lg ${bgColor} shadow-lg gap-4`}>
+    <div className={`w-[330px] sm:w-[250px] h-[220px] sm:h-[300px] px-6 py-7 flex flex-col rounded-lg ${bgColor} shadow-lg gap-4`}>
       <div className="flex justify-end">
         <Icon className={`h-10 w-10 ${iconColor}`}/>
       </div>
