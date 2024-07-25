@@ -50,7 +50,7 @@ export default function Home() {
           subTitleColor="text-lime-900"
         />
         <div className="flex flex-col gap-6 max-w-lg">
-          <p className="text-left text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9">
+          <p className="text-left text-gray-600 text-md font-normal font-secondary leading-9">
             Holistic Group specializes in building communities and providing
             end-to-end solutions to customers aspiring for a nature-centric
             lifestyle. We Design, Build, Develop & Manage these communities. In
@@ -73,11 +73,11 @@ export default function Home() {
         </div>
       </section>
       <section className="WhyChooseUs px-2 sm:px-12 py-8 lex flex-col items-center justify-center self-stretch ">
-        <div className="Header justify-center flex flex-col items-center gap-2 sm:gap-6">
+        <div className="Header justify-center flex flex-col items-center gap-2 sm:gap-3">
           <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold">
             Why Choose Us?
           </h2>
-          <p className="px-30 sm:px-80 text-center text-sm sm:text-md text-gray-500">
+          <p className="px-30 sm:px-80 text-center text-md text-gray-500">
             We provide end to end solutions & undertake Design, Approval,
             Procurement, Construction and Maintenance of all projects with our
             in house team of experts
@@ -131,7 +131,7 @@ export default function Home() {
         />
         <ChooseProjectCarousel />
       </section>
-      <div className="Header px-4 sm:px-52 py-12 justify-center flex self-stretch flex-col items-center gap-3 sm:gap-6 bg-primary">
+      <div className="Header px-4 sm:px-52 py-12 sm:py-20 justify-center flex self-stretch flex-col items-center gap-3 sm:gap-6 bg-primary">
         <h2 className="text-2xl sm:text-4xl font-medium text-white text-center">
           Thread By Thread, Leaf By Leaf, We Weave A Tapestry Of Holistic
           Living.
