@@ -86,6 +86,18 @@ export default function Home() {
         <SectionHeader title="Choose Your Project" subTitle="Discover Your Ideal Nature Home" titleColor="text-secondary" subTitleColor="text-lime-900" />
         <ChooseProjectCarousel />
       </section>
+      <div className="Header px-52 py-12 w-full justify-center flex flex-col items-center gap-3 sm:gap-6 bg-primary">
+          <h2 className="text-2xl sm:text-4xl font-medium text-white text-center">Thread By Thread, Leaf By Leaf, We Weave A Tapestry Of Holistic Living.</h2>
+          <Link href="/">
+              <Button
+                variant="secondary"
+                size="lg"
+                className="shadow-xl bg-secondary text-white"
+              >
+                Get Quick Callback
+              </Button>
+            </Link>
+        </div>
     </div>
   );
 }
