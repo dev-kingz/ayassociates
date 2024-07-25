@@ -54,7 +54,7 @@ export default function Home() {
           <IconTextCard Icon={FaHouseChimney } title="Integrated Resort Community Estates" text="Robust Amenities & Infrastructure" bgColor="bg-white" />
         </div>
       </section>
-      <section className="ChooseProject px-52 py-8 flex flex-col items-center justify-center self-stretch">
+      <section className="ChooseProject px-52 py-8 flex flex-col items-center justify-center self-stretch gap-11">
         <SectionHeader title="Choose Your Project" subTitle="Discover Your Ideal Nature Home" titleColor="text-secondary" subTitleColor="text-lime-900"/>
         <ChooseProjectCarousel/>
       </section>
