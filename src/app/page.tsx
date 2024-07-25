@@ -8,6 +8,10 @@ import IconTextCard from "@/components/Cards/IconTextCard";
 import { ProductsServicesAccordian } from "@/components/Accordian/ProductsServicesAccordian";
 import { ProductsServicesCarousel } from "@/components/Carousel/ProductsServicesCarousel";
 import { ChooseProjectCarousel } from "@/components/Carousel/ChooseProject";
+import { RiPoliceBadgeLine } from "react-icons/ri";
+import { GiStarsStack } from "react-icons/gi";
+import { FaRegHandshake } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -98,6 +102,47 @@ export default function Home() {
               </Button>
             </Link>
         </div>
+        <section className="UniquenessSection flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-8 sm:px-48 py-12 gap-8 sm:gap-28">
+      <Image
+        src="/gallery/images/Uniqueness-Section-Image.png"
+        alt="About Us"
+        width={500}
+        height={500}
+        className="rounded-lg"
+      />
+      <div className="flex flex-col items-center sm:items-start justify-center self-stretch gap-8">
+        <SectionHeader title="Our Uniqueness" subTitle="Why Choose Us?" titleColor="text-secondary" subTitleColor="text-lime-900" />
+        <div className="UniquenessCards flex flex-col items-center sm:items-start gap-8">
+          <div className="Card flex flex-col items-center sm:items-start justify-center self-stretch gap-4">
+            <div className="flex items-center justify-center">
+            <GiStarsStack className="w-6 h-6 text-lime-900 " />
+              <h3 className="text-lg text-lime-900 font-semibold ml-2">Setting Ourselves Apart</h3>
+            </div>
+            <p className="text-md text-gray-500 text-center sm:text-left">
+              Discover Unmatched Expertise, Impeccable Quality, and Tailored Solutions as per your needs.
+            </p>
+          </div>
+          <div className="Card flex flex-col items-center sm:items-start justify-center self-stretch gap-4">
+            <div className="flex items-center justify-center">
+            <RiPoliceBadgeLine className="w-6 h-6 text-lime-900 " />
+              <h3 className="text-lg text-lime-900 font-semibold ml-2">Elevate Your Experience</h3>
+            </div>
+            <p className="text-md text-gray-500 text-center sm:text-left">
+              Immerse yourself in a lifestyle curated by experts, ensuring unparalleled quality and a personalized touch.
+            </p>
+          </div>
+          <div className="Card flex flex-col items-center sm:items-start justify-center self-stretch gap-4">
+            <div className="flex items-start justify-start">
+            <FaRegHandshake className="w-6 h-6 text-lime-900 " />
+              <h3 className="text-lg text-lime-900 font-semibold ml-2">Embark on Your Journey with Us</h3>
+            </div>
+            <p className="text-md text-gray-500 text-center sm:text-left">
+              Let us be a part of your adventure! Experience a guided journey enriched by our unwavering commitment to excellence. Let&apos;s make this journey together, uniquely yours.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     </div>
   );
 }
