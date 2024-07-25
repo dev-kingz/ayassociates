@@ -3,7 +3,9 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link";
 import { MdSecurity } from "react-icons/md";
 import { GrUserManager } from "react-icons/gr";
-import { FaMapLocationDot, FaHouseChimney  } from "react-icons/fa6";
+import { FaMapLocationDot, FaHouseChimney } from "react-icons/fa6";
+import { ProductsServicesAccordian } from "@/components/Accordian/ProductsServicesAccordian";
+import SectionHeader from "@/components/Header/SectionHeader";
 
 export default function Home() {
   return (
@@ -49,7 +51,13 @@ export default function Home() {
           <IconTextCard Icon={MdSecurity} title="Secured & Fenced" text="Round-the-Clock Safety and Security for All" bgColor="bg-secondary" />
           <IconTextCard Icon={GrUserManager} title="Managed & Maintained" text="Hassle Free & Cost Effective" bgColor="bg-white" />
           <IconTextCard Icon={FaMapLocationDot} title="Prime Location & Smart Investment" text="Connectivity & Well-Thought-Out Returns" bgColor="bg-secondary" />
-          <IconTextCard Icon={FaHouseChimney } title="Integrated Resort Community Estates" text="Robust Amenities & Infrastructure" bgColor="bg-white" />
+          <IconTextCard Icon={FaHouseChimney} title="Integrated Resort Community Estates" text="Robust Amenities & Infrastructure" bgColor="bg-white" />
+        </div>
+      </section>
+      <section className="flex flex-row items-start justify-center self-stretch px-2 py-8 gap-36">
+        <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-12">
+        <SectionHeader title="Our Products & Services" subTitle="Explore Our Diverse Properties" titleColor="text-secondary" subTitleColor="text-lime-900" />
+        <ProductsServicesAccordian />
         </div>
       </section>
     </div>
