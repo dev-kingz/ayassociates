@@ -1,4 +1,5 @@
 import ContactForm from "@/components/Forms/ContactForm";
+import TitleHeader from "@/components/Header/TitleHeader";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
@@ -9,7 +10,7 @@ import { MdOutlineEmail } from "react-icons/md";
 const ContactPage = () => {
   return (
     <div className="ContactPage flex grow flex-col items-center justify-center self-stretch">
-      <section className="relative flex h-[80vh] grow items-center justify-center self-stretch bg-hero bg-cover bg-center pt-3 sm:h-[90vh]"></section>
+      <TitleHeader image="/gallery/images/Contact-Title-Header-Image.jpg" titleText="Contact Us" subTitleText="Get in touch with us" />
 
       <section className="ContactUsCTAs flex items-center sm:justify-between py-6 px-3 sm:px-14 gap-1 sm:gap-4 self-stretch">
         <Button className="grow px-2 sm:px-2 flex gap-2 sm:h-12 text-sm sm:text-base">
