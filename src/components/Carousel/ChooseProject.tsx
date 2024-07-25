@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -56,28 +55,28 @@ const projects = [
 
 export function ChooseProjectCarousel() {
   return (
-    <Carousel className="w-full">
+    <Carousel className="w-[310px] sm:w-full">
       <CarouselContent className="flex">
         {projects.map((project, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem key={index} className="basis-full md:basis-1/2 lg:basis-1/3">
             <div className="relative rounded-lg overflow-hidden">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-[350px] h-[380px] object-cover rounded-lg"
+                className="w-full h-[360px] sm:h-[380px] object-cover rounded-lg"
               />
               <span
-                className={`absolute top-2 left-2 bg-gray-100 bg-transparent text-black py-2 px-3 rounded-lg text-sm font-semibold ${project.status.toLowerCase()}`}
+                className={`absolute top-2 left-2 bg-gray-100 text-gray-700 py-2 px-3 rounded-lg text-sm font-semibold ${project.status.toLowerCase()}`}
               >
                 {project.status}
               </span>
               <CardContent className="flex flex-col text-start justify-start py-3 gap-3">
                 <div className="Title flex flex-col">
-                  <h3 className="text-2xl font-semibold text-secondary">{project.title}</h3>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-secondary">{project.title}</h3>
                 </div>
                 <div className="Details flex flex-col">
-                <p className="text-gray-500">{project.location}</p>
-                <p className="text-gray-700">{project.description}</p>
+                  <p className="text-gray-500">{project.location}</p>
+                  <p className="text-md text-gray-700">{project.description}</p>
                 </div>
               </CardContent>
             </div>

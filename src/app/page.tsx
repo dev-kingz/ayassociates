@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link";
 import { MdSecurity } from "react-icons/md";
 import { GrUserManager } from "react-icons/gr";
-import { FaMapLocationDot, FaHouseChimney  } from "react-icons/fa6";
+import { FaMapLocationDot, FaHouseChimney } from "react-icons/fa6";
 import SectionHeader from "@/components/Header/SectionHeader";
 import { ChooseProjectCarousel } from "@/components/Carousel/ChooseProject";
 
@@ -51,12 +51,12 @@ export default function Home() {
           <IconTextCard Icon={MdSecurity} title="Secured & Fenced" text="Round-the-Clock Safety and Security for All" bgColor="bg-secondary" />
           <IconTextCard Icon={GrUserManager} title="Managed & Maintained" text="Hassle Free & Cost Effective" bgColor="bg-white" />
           <IconTextCard Icon={FaMapLocationDot} title="Prime Location & Smart Investment" text="Connectivity & Well-Thought-Out Returns" bgColor="bg-secondary" />
-          <IconTextCard Icon={FaHouseChimney } title="Integrated Resort Community Estates" text="Robust Amenities & Infrastructure" bgColor="bg-white" />
+          <IconTextCard Icon={FaHouseChimney} title="Integrated Resort Community Estates" text="Robust Amenities & Infrastructure" bgColor="bg-white" />
         </div>
       </section>
-      <section className="ChooseProject px-52 py-8 flex flex-col items-center justify-center self-stretch gap-11">
-        <SectionHeader title="Choose Your Project" subTitle="Discover Your Ideal Nature Home" titleColor="text-secondary" subTitleColor="text-lime-900"/>
-        <ChooseProjectCarousel/>
+      <section className="ChooseProject px-8 md:px-24 lg:px-52 py-8 flex flex-col items-center justify-center self-stretch gap-11">
+        <SectionHeader title="Choose Your Project" subTitle="Discover Your Ideal Nature Home" titleColor="text-secondary" subTitleColor="text-lime-900" />
+        <ChooseProjectCarousel />
       </section>
 
     </div>
