@@ -37,7 +37,7 @@ const ContactPage = () => {
           className="rounded-lg"
         />
       </section>
-      <section className="Mission px-8 sm:px-48 py-12 flex flex-col sm:flex-row items-center justify-between bg-white gap-5 sm:gap-36 ">
+      <section className="Mission px-8 sm:px-48 py-6 sm:py-12 flex flex-col sm:flex-row items-center justify-between bg-white gap-5 sm:gap-36 ">
         <div className="flex flex-col gap-6 max-w-lg">
           <SectionHeader title="Our Mission" subTitle="Our Commitment to Quality Living" titleColor="text-secondary" subTitleColor="text-lime-900" />
           <p className="text-left text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9">
@@ -52,7 +52,7 @@ const ContactPage = () => {
           className="rounded-lg"
         />
       </section>
-      <section className="Mission px-8 sm:px-48 py-12 flex flex-col sm:flex-row items-center justify-between bg-white gap-5 sm:gap-36 ">
+      <section className="Vision px-8 sm:px-48 py-6 sm:py-12 flex flex-col sm:flex-row items-center justify-between bg-white gap-5 sm:gap-36 ">
       <Image
           src="/gallery/images/Vision-Image.jpg"
           alt="About Us Image"
@@ -67,7 +67,7 @@ const ContactPage = () => {
           </p>
         </div>
       </section>
-      <section className="CoreValues py-12 flex flex-col bg-white gap-5 sm:gap-12">
+      <section className="Timeline py-6 sm:py-12 flex flex-col bg-white gap-5 sm:gap-12">
           <h1 className="text-4xl text-center text-lime-800">
             Our Timeline
           </h1>
@@ -80,7 +80,6 @@ const ContactPage = () => {
             className="rounded-lg w-full"
             />
       </section >
-      
     </div >
   );
 };
