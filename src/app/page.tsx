@@ -90,7 +90,7 @@ export default function Home() {
         <SectionHeader title="Choose Your Project" subTitle="Discover Your Ideal Nature Home" titleColor="text-secondary" subTitleColor="text-lime-900" />
         <ChooseProjectCarousel />
       </section>
-      <div className="Header px-52 py-12 w-full justify-center flex flex-col items-center gap-3 sm:gap-6 bg-primary">
+      <div className="Header px-4 sm:px-52 py-12 justify-center flex self-stretch flex-col items-center gap-3 sm:gap-6 bg-primary">
           <h2 className="text-2xl sm:text-4xl font-medium text-white text-center">Thread By Thread, Leaf By Leaf, We Weave A Tapestry Of Holistic Living.</h2>
           <Link href="/">
               <Button
@@ -112,31 +112,31 @@ export default function Home() {
       />
       <div className="flex flex-col items-center sm:items-start justify-center self-stretch gap-8">
         <SectionHeader title="Our Uniqueness" subTitle="Why Choose Us?" titleColor="text-secondary" subTitleColor="text-lime-900" />
-        <div className="UniquenessCards flex flex-col items-center sm:items-start gap-8">
-          <div className="Card flex flex-col items-center sm:items-start justify-center self-stretch gap-4">
-            <div className="flex items-center justify-center">
+        <div className="UniquenessCards flex flex-col items-start gap-8">
+          <div className="Card flex flex-col items-start justify-center self-stretch gap-4">
+            <div className="flex items-start sm:items-center justify-start sm:justify-center">
             <GiStarsStack className="w-6 h-6 text-lime-900 " />
               <h3 className="text-lg text-lime-900 font-semibold ml-2">Setting Ourselves Apart</h3>
             </div>
-            <p className="text-md text-gray-500 text-center sm:text-left">
+            <p className="text-md text-gray-500 text-start sm:text-left">
               Discover Unmatched Expertise, Impeccable Quality, and Tailored Solutions as per your needs.
             </p>
           </div>
-          <div className="Card flex flex-col items-center sm:items-start justify-center self-stretch gap-4">
+          <div className="Card flex flex-col items-start justify-center self-stretch gap-4">
             <div className="flex items-center justify-center">
             <RiPoliceBadgeLine className="w-6 h-6 text-lime-900 " />
               <h3 className="text-lg text-lime-900 font-semibold ml-2">Elevate Your Experience</h3>
             </div>
-            <p className="text-md text-gray-500 text-center sm:text-left">
+            <p className="text-md text-gray-500 text-start sm:text-left">
               Immerse yourself in a lifestyle curated by experts, ensuring unparalleled quality and a personalized touch.
             </p>
           </div>
-          <div className="Card flex flex-col items-center sm:items-start justify-center self-stretch gap-4">
+          <div className="Card flex flex-col items-start justify-center self-stretch gap-4">
             <div className="flex items-start justify-start">
             <FaRegHandshake className="w-6 h-6 text-lime-900 " />
               <h3 className="text-lg text-lime-900 font-semibold ml-2">Embark on Your Journey with Us</h3>
             </div>
-            <p className="text-md text-gray-500 text-center sm:text-left">
+            <p className="text-md text-gray-500 text-start sm:text-left">
               Let us be a part of your adventure! Experience a guided journey enriched by our unwavering commitment to excellence. Let&apos;s make this journey together, uniquely yours.
             </p>
           </div>

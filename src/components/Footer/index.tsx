@@ -5,7 +5,7 @@ import SocialIcons from "../Icons/SocialIcons";
 
 export function Footer() {
   return (
-    <footer className="Footer flex w-full flex-col text-white">
+    <footer className="Footer flex w-full flex-col text-white mt-6">
       <section className="TopSection relative flex flex-col md:flex-row md:justify-between md:items-center pt-8 sm:py-10 sm:px-36 bg-primary mt-44">
         <div className="flex flex-col self-stretch items-center sm:items-start gap-6 md:gap-12 px-8">
           <div className="TopSectionText flex flex-col gap-2 text-center md:text-left">
