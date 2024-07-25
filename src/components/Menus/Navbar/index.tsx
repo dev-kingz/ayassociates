@@ -11,7 +11,7 @@ export function Navbar() {
   return (
     <nav
       className={cn(
-        "absolute left-0 top-0 z-50 flex h-[70px] w-full items-center justify-between self-stretch px-6  transition-transform duration-300 ease-in-out md:px-20"
+        "absolute left-0 top-0 z-50 flex h-[70px] w-full items-center justify-between self-stretch transition-transform duration-300 ease-in-out px-4 lg:px-20"
       )}
     >
       <Link href={"/"}>
