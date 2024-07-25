@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 
 const images = [
   "/gallery/images/Products-Services-Carousel-Picture1.jpg",
@@ -33,7 +34,13 @@ export function ProductsServicesCarousel() {
             <div className="w-full h-full">
               <Card className="w-full h-[360px] sm:h-[500px]">
                 <CardContent className="flex items-center justify-center h-full p-0">
-                  <img src={image} alt={`Image ${index + 1}`} className="rounded-lg w-full h-full object-cover" />
+                  <Image 
+                  src={image} 
+                  width={500}
+                  height={500}
+                  alt={`Image ${index + 1}`} 
+                  className="rounded-lg w-full h-full object-cover" 
+                  />
                 </CardContent>
               </Card>
             </div>
