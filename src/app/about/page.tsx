@@ -68,7 +68,17 @@ const ContactPage = () => {
         </div>
       </section>
       <section className="Timeline py-6 sm:py-12 flex flex-col bg-white gap-5 sm:gap-12">
-        <h1 className="text-4xl text-center text-lime-800">
+        <h1 className="text-2xl sm:text-4xl text-center text-lime-800">
+          Our Core Values
+        </h1>
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-12">
+        <PhotoTextCard image="/gallery/images/Innovation.jpg" title="Integrity" subTitle="Creativity, Belief for a Positive Change" />
+        <PhotoTextCard image="/gallery/images/Integrity.jpg" title="Innovation" subTitle="Honesty, Transparency & Ethical Conduct" />
+        <PhotoTextCard image="/gallery/images/Experience.png" title="Experience With Us" subTitle="Satisfaction, Expertise, Memorable Journey" />
+        </div>
+      </section >
+      <section className="Timeline py-6 sm:py-12 flex flex-col bg-white gap-5 sm:gap-12">
+        <h1 className="text-2xl sm:text-4xl text-center text-lime-800">
           Our Timeline
         </h1>
         <Image
@@ -80,8 +90,8 @@ const ContactPage = () => {
           className="rounded-lg w-full"
         />
       </section >
-      <section className="Timeline py-6 sm:py-12 flex flex-col bg-white gap-5 sm:gap-12">
-        <h1 className="text-4xl text-center text-lime-800">
+      <section className="Team py-6 sm:py-12 flex flex-col bg-white gap-5 sm:gap-12">
+        <h1 className="text-2xl sm:text-4xl text-center text-lime-800">
           Management Team
         </h1>
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-12">
