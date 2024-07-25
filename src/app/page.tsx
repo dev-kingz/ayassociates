@@ -7,6 +7,7 @@ import { FaMapLocationDot, FaHouseChimney  } from "react-icons/fa6";
 import IconTextCard from "@/components/Cards/IconTextCard";
 import { ProductsServicesAccordian } from "@/components/Accordian/ProductsServicesAccordian";
 import { ProductsServicesCarousel } from "@/components/Carousel/ProductsServicesCarousel";
+import { ChooseProjectCarousel } from "@/components/Carousel/ChooseProject";
 
 export default function Home() {
   return (
