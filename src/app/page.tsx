@@ -3,17 +3,14 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link";
 import { MdSecurity } from "react-icons/md";
 import { GrUserManager } from "react-icons/gr";
-import { FaMapLocationDot, FaHouseChimney } from "react-icons/fa6";
-import { ProductsServicesAccordian } from "@/components/Accordian/ProductsServicesAccordian";
-import IconTextCard from "@/components/Cards/IconTextCard";
-import { ProductsServicesCarousel } from "@/components/Carousel/ProductsServicesCarousel";
+import { FaMapLocationDot, FaHouseChimney  } from "react-icons/fa6";
 
 export default function Home() {
   return (
     <div className="flex grow flex-col items-center self-stretch">
       <section className="relative flex h-[80vh] grow items-center justify-center self-stretch bg-hero bg-cover bg-center pt-3 sm:h-[90vh]">
         <div className="text-center text-white">
-          <h1 className="mb-4 px-4 text-4xl font-semibod sm:text-6xl">
+          <h1 className="mb-4 px-4 text-4xl font-semibold sm:text-6xl">
             Building Nature Communities
           </h1>
           <p className="mb-8 px-6 text-sm sm:text-lg">
