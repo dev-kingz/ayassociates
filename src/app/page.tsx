@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <TitleHeader image="/gallery/backgrounds/hero.jpg" titleText="Our Story" subTitleText="at AY Associates Nature Homes" />
+      <TitleHeader image="/gallery/images/Contact-Title-Header-Image.jpg" titleText="Contact Us" subTitleText="Reach out to us" />
     </div>
   );
 }
