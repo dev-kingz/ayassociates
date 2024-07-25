@@ -9,7 +9,14 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
-export function CarouselSpacing() {
+const images = [
+  "/gallery/images/Choose-Project-Picture1.jpg",
+  "/gallery/images/Choose-Project-Picture2.jpg",
+  "/gallery/images/Choose-Project-Picture3.jpg",
+  "/gallery/images/Choose-Project-Picture4.jpg",
+]
+
+export function ChooseProjectCarousel() {
   return (
     <Carousel className="w-full max-w-sm">
       <CarouselContent className="-ml-1">
