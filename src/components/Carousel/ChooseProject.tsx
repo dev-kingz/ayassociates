@@ -1,3 +1,4 @@
+"use client"
 import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -7,6 +8,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 
 const projects = [
   {
@@ -54,15 +57,25 @@ const projects = [
 ];
 
 export function ChooseProjectCarousel() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
+
   return (
-    <Carousel className="w-[310px] sm:w-full">
+    <Carousel
+      plugins={[plugin.current]}
+      onMouseEnter={plugin.current.stop}
+      onMouseLeave={plugin.current.reset}
+      className="w-[310px] sm:w-full">
       <CarouselContent className="flex">
         {projects.map((project, index) => (
           <CarouselItem key={index} className="basis-full md:basis-1/2 lg:basis-1/3">
             <div className="relative rounded-lg overflow-hidden">
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
+                width={500}
+                height={500}
                 className="w-full h-[360px] sm:h-[380px] object-cover rounded-lg"
               />
               <span
