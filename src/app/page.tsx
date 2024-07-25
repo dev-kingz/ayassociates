@@ -110,7 +110,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-8 sm:px-2 py-8 gap-8 sm:gap-36">
+      <section className="w-[100vw] flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-8 sm:px-2 py-8 gap-8 sm:gap-36">
         <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-4 sm:gap-12">
           <SectionHeader
             title="Our Products & Services"
@@ -122,7 +122,7 @@ export default function Home() {
         </div>
         <ProductsServicesCarousel />
       </section>
-      <section className="ChooseProject px-8 md:px-24 lg:px-52 py-8 flex flex-col items-center justify-center self-stretch gap-11">
+      <section className="ChooseProject w-[100vw] px-8 md:px-24 lg:px-52 py-8 flex flex-col items-center justify-center self-stretch gap-11">
         <SectionHeader
           title="Choose Your Project"
           subTitle="Discover Your Ideal Nature Home"
@@ -146,7 +146,7 @@ export default function Home() {
           </Button>
         </Link>
       </div>
-      <section className="UniquenessSection flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-8 sm:px-48 py-12 gap-8 sm:gap-28">
+      <section className="UniquenessSection w-[100vw] flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-8 sm:px-48 py-12 gap-8 sm:gap-28">
         <Image
           src="/gallery/images/Uniqueness-Section-Image.png"
           alt="About Us"
