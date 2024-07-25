@@ -4,6 +4,9 @@ import Link from "next/link";
 import { MdSecurity } from "react-icons/md";
 import { GrUserManager } from "react-icons/gr";
 import { FaMapLocationDot, FaHouseChimney  } from "react-icons/fa6";
+import IconTextCard from "@/components/Cards/IconTextCard";
+import { ProductsServicesAccordian } from "@/components/Accordian/ProductsServicesAccordian";
+import { ProductsServicesCarousel } from "@/components/Carousel/ProductsServicesCarousel";
 
 export default function Home() {
   return (
@@ -70,6 +73,13 @@ export default function Home() {
           <IconTextCard Icon={FaMapLocationDot} title="Prime Location & Smart Investment" text="Connectivity & Well-Thought-Out Returns" bgColor="bg-secondary" />
           <IconTextCard Icon={FaHouseChimney} title="Integrated Resort Community Estates" text="Robust Amenities & Infrastructure" bgColor="bg-white" />
         </div>
+      </section>
+      <section className="flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-8 sm:px-2 py-8 gap-8 sm:gap-36">
+        <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-4 sm:gap-12">
+        <SectionHeader title="Our Products & Services" subTitle="Explore Our Diverse Properties" titleColor="text-secondary" subTitleColor="text-lime-900" />
+        <ProductsServicesAccordian />
+        </div>
+        <ProductsServicesCarousel/>
       </section>
     </div>
   );
