@@ -6,6 +6,7 @@ import { GrUserManager } from "react-icons/gr";
 import { FaMapLocationDot, FaHouseChimney } from "react-icons/fa6";
 import { ProductsServicesAccordian } from "@/components/Accordian/ProductsServicesAccordian";
 import IconTextCard from "@/components/Cards/IconTextCard";
+import { ProductsServicesCarousel } from "@/components/Carousel/ProductsServicesCarousel";
 
 export default function Home() {
   return (
@@ -78,6 +79,7 @@ export default function Home() {
         <SectionHeader title="Our Products & Services" subTitle="Explore Our Diverse Properties" titleColor="text-secondary" subTitleColor="text-lime-900" />
         <ProductsServicesAccordian />
         </div>
+        <ProductsServicesCarousel/>
       </section>
     </div>
   );
