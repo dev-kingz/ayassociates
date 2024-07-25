@@ -4,6 +4,7 @@ import Link from "next/link";
 import { MdSecurity } from "react-icons/md";
 import { GrUserManager } from "react-icons/gr";
 import { FaMapLocationDot, FaHouseChimney  } from "react-icons/fa6";
+import IconTextCard from "@/components/Cards/IconTextCard";
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
         </div>
       </section>
       <section className="About px-8 sm:px-48 py-12 flex flex-col sm:flex-row items-start justify-between bg-white gap-5 sm:gap-36 ">
-        <SectionHeader title="About Us" subTitle="About Holistic Nature Homes" titleColor="text-secondary" subTitleColor="text-lime-950"/>
+        <SectionHeader title="About Us" subTitle="About Holistic Nature Homes" titleColor="text-secondary" subTitleColor="text-lime-900"/>
         <div className="flex flex-col gap-6 max-w-lg">
           <p className="text-left text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9">
             Holistic Group specializes in building communities and providing end-to-end solutions to customers aspiring for a nature-centric lifestyle. We Design, Build, Develop & Manage these communities.
@@ -59,7 +60,7 @@ export default function Home() {
       </section>
       <section className="WhyChooseUs px-12 py-8 lex flex-col items-center justify-center self-stretch ">
         <div className="Header justify-center flex flex-col items-center gap-2 sm:gap-6">
-          <h2 className="text-2xl sm:text-4xl font-semibold text-secondary">Why Choose Us?</h2>
+          <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold">Why Choose Us?</h2>
           <p className="px-30 sm:px-80 text-center text-sm sm:text-md text-gray-500">
             We provide end to end solutions & undertake Design, Approval, Procurement, Construction and Maintenance of all projects with our in house team of experts
           </p>
