@@ -3,7 +3,7 @@ import React from 'react'
 
 const PhotoTextCard = ({ image, title, subTitle }: { image: string, title: string, subTitle: string }) => {
   return (
-    <div className="relative flex h-[400px] w[400px] items-center justify-end rounded-lg">
+    <div className="flex h-[400px] w[400px] items-start">
       <Image
         src={image}
         alt="Background Image"

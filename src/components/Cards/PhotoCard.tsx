@@ -3,20 +3,19 @@ import React from 'react'
 
 const PhotoCard = ({ image, name, role }: { image: string, name: string, role: string }) => {
   return (
-    <div className="flex h-40 w-70 items-center justify-end rounded-lg gap-4">
+    <div className="flex flex-col self-stretch items-center gap-4">
     <Image
       src={image}
       alt="Background Image"
-      width={300}
-      height={400}
-      objectFit="cover"
+      width={350}
+      height={450}
       className="rounded-xl"
     />
-    <div className="absolute inset-0 flex flex-col justify-center text-center text-white z-10 px-6">
-      <h1 className="mb-4 text-3xl font-semibold">
+    <div className="flex flex-col justify-center text-center px-6">
+      <h1 className="text-2xl text-secondary font-medium">
         {name}
       </h1>
-      <p className="mb-8 text-lg font-secondary">
+      <p className="text-md text-gray-600 font-secondary">
         {role}
       </p>
     </div>

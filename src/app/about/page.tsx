@@ -53,7 +53,7 @@ const ContactPage = () => {
         />
       </section>
       <section className="Vision px-8 sm:px-48 py-6 sm:py-12 flex flex-col sm:flex-row items-center justify-between bg-white gap-5 sm:gap-36 ">
-      <Image
+        <Image
           src="/gallery/images/Vision-Image.jpg"
           alt="About Us Image"
           width={500}
@@ -63,23 +63,34 @@ const ContactPage = () => {
         <div className="flex flex-col gap-6 max-w-lg">
           <SectionHeader title="Our Vision" subTitle="Sustainable Homes" titleColor="text-secondary" subTitleColor="text-lime-900" />
           <p className="text-left text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9">
-          We are passionate about crafting nature-centric lifestyles, where the harmony of Mother Nature defines a true, enriched life. Our vision is to lead the way in curating every aspect of sustainable and personalized nature homes.
+            We are passionate about crafting nature-centric lifestyles, where the harmony of Mother Nature defines a true, enriched life. Our vision is to lead the way in curating every aspect of sustainable and personalized nature homes.
           </p>
         </div>
       </section>
       <section className="Timeline py-6 sm:py-12 flex flex-col bg-white gap-5 sm:gap-12">
-          <h1 className="text-4xl text-center text-lime-800">
-            Our Timeline
-          </h1>
-          <Image
-            src="/gallery/images/Timeline.jpg"
-            alt="Our Timeline"
-            width={1400}
-            height={800}
-            layout="responsive"
-            className="rounded-lg w-full"
-            />
+        <h1 className="text-4xl text-center text-lime-800">
+          Our Timeline
+        </h1>
+        <Image
+          src="/gallery/images/Timeline.jpg"
+          alt="Our Timeline"
+          width={1400}
+          height={800}
+          layout="responsive"
+          className="rounded-lg w-full"
+        />
       </section >
+      <section className="Timeline py-6 sm:py-12 flex flex-col bg-white gap-5 sm:gap-12">
+        <h1 className="text-4xl text-center text-lime-800">
+          Management Team
+        </h1>
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-12">
+        <PhotoCard image="/gallery/images/Team-Member-1.png" name="Sanjoy Das" role="Founder & MD" />
+        <PhotoCard image="/gallery/images/Team-Member-2.png" name="Subhankar Mitra" role="Co-founder & Director" />
+        <PhotoCard image="/gallery/images/Team-Member-3.png" name="Mrityunjoy Aich" role="CEO Hospitality" />
+        </div>
+      </section >
+
     </div >
   );
 };
