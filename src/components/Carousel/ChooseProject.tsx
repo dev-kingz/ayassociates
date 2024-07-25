@@ -59,16 +59,26 @@ export function ChooseProjectCarousel() {
     <Carousel className="w-full">
       <CarouselContent className="flex">
         {projects.map((project, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 p-2">
-            <div className="rounded-lg overflow-hidden">
-              <img src={project.image} alt={project.title} className="w-full h-[380px] object-cover rounded-lg" />
-              <CardContent className="flex flex-col items-center justify-center px-6 py-3">
-                <div className="flex flex-col justify-between items-center">
-                  <h3 className="text-xl font-semibold">{project.title}</h3>
-                  <span className={`status ${project.status.toLowerCase()}`}>{project.status}</span>
+          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+            <div className="relative rounded-lg overflow-hidden">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-[350px] h-[380px] object-cover rounded-lg"
+              />
+              <span
+                className={`absolute top-2 left-2 bg-gray-100 bg-transparent text-black py-2 px-3 rounded-lg text-sm font-semibold ${project.status.toLowerCase()}`}
+              >
+                {project.status}
+              </span>
+              <CardContent className="flex flex-col text-start justify-start py-3 gap-3">
+                <div className="Title flex flex-col">
+                  <h3 className="text-2xl font-semibold text-secondary">{project.title}</h3>
                 </div>
+                <div className="Details flex flex-col">
                 <p className="text-gray-500">{project.location}</p>
                 <p className="text-gray-700">{project.description}</p>
+                </div>
               </CardContent>
             </div>
           </CarouselItem>
