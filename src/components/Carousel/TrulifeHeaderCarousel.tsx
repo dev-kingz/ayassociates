@@ -76,7 +76,7 @@ export function TrulifeHeaderCarousel() {
                                     <h1 className="text-3xl sm:text-5xl font-semibold text-white">TruLife</h1>
                                     <div className="Details flex flex-col">
                                         <p className="text-white">Karjat, Raigad</p>
-                                        <div className="HeaderButtons flex flex-row gap-4 mt-4">
+                                        <div className="HeaderButtons flex flex-col sm:flex-row gap-4 mt-4">
                                             <Link href="/">
                                                 <Button
                                                     variant="secondary"

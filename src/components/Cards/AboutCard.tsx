@@ -11,7 +11,7 @@ const AboutCard = ({
     Icon: IconType;
   }) => {
     return (
-        <div className="flex px-2 sm:px-8 py-4 w-[360px] sm:w-[380px] h-[80px] flex-row bg-gray-200 gap-5 rounded-lg items-start justify-start">
+        <div className="flex px-4 sm:px-8 py-4 w-[150px] sm:w-[380px] sm:h-[80px] flex-col sm:flex-row bg-gray-200 gap-5 rounded-lg items-start justify-start self-stretch">
             <Icon className={`h-8 w-8 `}/>
             <div className="Text flex text-start justify-start flex-col gap-1">
                 <h1
@@ -19,7 +19,7 @@ const AboutCard = ({
                 >
                    {title}
                 </h1>
-                <p className=" text-gray-600 text-md sm:text-lg font-medium ">
+                <p className=" text-gray-600 text-md sm:text-lg font-medium flex self-stretch ">
                 {subTitle}
                 </p>
             </div>
