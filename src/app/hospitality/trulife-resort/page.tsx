@@ -17,6 +17,7 @@ import { ProjectHighlightsCarousel } from "@/components/Carousel/ProjectHighligh
 import { TrulifeHeaderCarousel } from "@/components/Carousel/TrulifeHeaderCarousel";
 import { TrulifeResortHeaderCarousel } from "@/components/Carousel/TrulifeResortHeaderCarousel";
 import ContactForm from "@/components/Forms/ContactForm";
+import { ClubAmenitiesCarousel } from "@/components/Carousel/ClubAmenitiesCarousel";
 
 const TruLife = () => {
     return (
@@ -66,6 +67,12 @@ const TruLife = () => {
                     <ContactForm />
                 </div>
             </section > */}
+            <section className="ClubAmenities w-[100vw] flex flex-col items-center justify-center self-stretch px-8 py-14 gap-8">
+                    <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold justify-center items-center ">
+                       Trulife Club Amenities
+                    </h2>
+                <ClubAmenitiesCarousel/>
+            </section>
             <section className="About px-8 sm:px-40 py-12 flex flex-col sm:flex-row items-start justify-between bg-white gap-5 sm:gap-32 ">
                 <div className="flex flex-col gap-6 basis-1/4">
                     <div className="w-full flex-col justify-start items-start inline-flex gap-3">
