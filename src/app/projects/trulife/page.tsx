@@ -80,12 +80,12 @@ const TruLife = () => {
                 </div>
                 <ProjectHighlightsCarousel />
             </section>
-            {/* <section className="ClubAmenities w-[100vw] flex flex-col items-center sm:items-start justify-center self-stretch px-8 py-14 gap-8">
+            <section className="ClubAmenities w-[100vw] flex flex-col items-center justify-center self-stretch px-8 py-14 gap-8">
                     <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold justify-center items-center ">
                        Trulife Club Amenities
                     </h2>
                 <ClubAmenitiesCarousel/>
-            </section> */}
+            </section>
             <section className="OtherProjects w-[100vw] flex flex-col items-center justify-center self-stretch py-20 gap-8">
                 <div className="Header justify-center flex flex-col items-center gap-2 sm:gap-3">
                     <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold">

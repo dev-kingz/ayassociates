@@ -50,6 +50,7 @@ export function TrulifeHeaderCarousel() {
     return (
         <div className="relative w-full">
             <Carousel
+                setApi={setApi}
                 plugins={[plugin.current]}
                 onMouseEnter={plugin.current.stop}
                 onMouseLeave={plugin.current.reset}
@@ -57,7 +58,7 @@ export function TrulifeHeaderCarousel() {
                 <CarouselContent className="flex">
                     {projects.map((project, index) => (
                         <CarouselItem key={index} className="basis-full">
-                            <div className="relative rounded-lg overflow-hidden">
+                            <div className="relative overflow-hidden">
                                 <Image
                                     src={project.image}
                                     alt="TruLife Header Image"
@@ -66,13 +67,13 @@ export function TrulifeHeaderCarousel() {
                                     className="w-full h-[600px] object-cover"
                                 />
                                 <CardContent className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 gap-3 bg-gradient-to-t from-black/50 to-transparent">
-                                        <Image
-                                            src="/gallery/images/Trulife-Logo.png"
-                                            alt="TruLife Logo"
-                                            width={100}
-                                            height={100}
-                                            />
-                                        <h1 className="text-3xl sm:text-5xl font-semibold text-white">TruLife</h1>
+                                    <Image
+                                        src="/gallery/images/Trulife-Logo.png"
+                                        alt="TruLife Logo"
+                                        width={100}
+                                        height={100}
+                                    />
+                                    <h1 className="text-3xl sm:text-5xl font-semibold text-white">TruLife</h1>
                                     <div className="Details flex flex-col">
                                         <p className="text-white">Karjat, Raigad</p>
                                         <div className="HeaderButtons flex flex-row gap-4 mt-4">
@@ -97,7 +98,7 @@ export function TrulifeHeaderCarousel() {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                {/* <button
+                <button
                     className="absolute left-4 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center font-bold"
                     onClick={() => api?.scrollTo(current - 1)}
                 >
@@ -108,7 +109,7 @@ export function TrulifeHeaderCarousel() {
                     onClick={() => api?.scrollTo(current + 1)}
                 >
                     <FaAngleRight className="h-6 w-6 text-white" />
-                </button> */}
+                </button>
             </Carousel>
         </div>
     );
