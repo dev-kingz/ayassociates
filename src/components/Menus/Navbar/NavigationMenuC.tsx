@@ -10,7 +10,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { ListItem } from "./ListItems";
-import { projectList } from "./ListItems/Lists";
+import { projectList,aboutList } from "./ListItems/Lists";
 
 export function NavigationMenuC() {
   return (
@@ -25,6 +25,23 @@ export function NavigationMenuC() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
+        <NavigationMenuTrigger className="bg-transparent text-primary-foreground text-md rounded-full">
+            About
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid p-2 md:w-[230px] border-t-4 border-green-800">
+              {aboutList.map((aboutItem) => (
+                <ListItem
+                  key={aboutItem.title}
+                  title={aboutItem.title}
+                  href={aboutItem.href}
+                 />
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent text-primary-foreground text-md rounded-full">
             Projects
           </NavigationMenuTrigger>
@@ -35,20 +52,10 @@ export function NavigationMenuC() {
                   key={projectItem.title}
                   title={projectItem.title}
                   href={projectItem.href}
-                >
-                  {projectItem.description}
-                </ListItem>
+                 />
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
-
-        <NavigationMenuItem>
-          <Link href="/about" legacyBehavior passHref>
-            <NavigationMenuLink className="text-primary-foreground hover:text-gray-300">
-              About Us
-            </NavigationMenuLink>
-          </Link>
         </NavigationMenuItem>
 
         <NavigationMenuItem>

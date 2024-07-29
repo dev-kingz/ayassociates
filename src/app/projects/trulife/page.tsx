@@ -1,0 +1,68 @@
+import AboutCard from "@/components/Cards/AboutCard";
+import PhotoCard from "@/components/Cards/PhotoCard";
+import PhotoTextCard from "@/components/Cards/PhotoTextCard";
+import SectionHeader from "@/components/Header/SectionHeader";
+import TitleHeader from "@/components/Header/TitleHeader";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { LuBedDouble } from "react-icons/lu";
+import { FaUmbrellaBeach } from "react-icons/fa";
+import { IoLocationOutline } from "react-icons/io5";
+import { IoPricetagOutline } from "react-icons/io5";
+import { IoConstructOutline } from "react-icons/io5";
+import { GrUserWorker } from "react-icons/gr";
+
+const ContactPage = () => {
+    return (
+        <div className="flex grow flex-col items-center self-stretch">
+            <section className="About px-8 sm:px-40 py-12 flex flex-col sm:flex-row items-start justify-between bg-white gap-5 sm:gap-32 ">
+                <div className="flex flex-col gap-6 basis-1/4">
+                    <div className="w-full flex-col justify-start items-start inline-flex gap-3">
+                        <div className="flex justify-start items-center gap-4">
+                            <div className="w-[75px] h-[1px] bg-secondary" />
+                            <div className={`text-secondary text-md font-normal font-secondary`}>
+                                About Project
+                            </div>
+                        </div>
+                        <div className="flex self-stretch gap-3">
+                            <Image
+                                src="/gallery/images/Trulife-Logo.png"
+                                alt="Trulife Logo"
+                                width={100}
+                                height={100}
+                            />
+                            <div className="Text flex text-start justify-start flex-col gap-2">
+                                <h1
+                                    className="self-stretch text-black text-3xl sm:text-4xl font-semibold"
+                                >
+                                    Trulife
+                                </h1>
+                                <p className=" text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9">
+                                    Your Exquisite Sanctuary of Nature and Luxury
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex flex-col gap-6 basis-3/4">
+                    <p className="text-left text-gray-600 text-md font-normal font-secondary leading-9">
+                        Picture yourself in one of 131 resort-themed villas, nestled around 45,000 sq ft of lush gardens. Choose from a range of 2/3/4 Bed villas, each meticulously designed with dimensions spanning 1400 to 3000 sq ft. TruLife is not just a residence; it&apos;s a landmark in Karjat, seamlessly connecting you to nature and modern living. Operated by Holistic Nature Homes LLP, The TruLife Club, spanning 22,000 sq ft, redefines holistic living with a landscaped track, state-of-the-art gym, Café, and a multi-cuisine restaurant. Welcome to TruLife, where every facet of life finds its perfect harmony.
+                    </p>
+                </div>
+                
+            </section>
+            <div className="flex flex-wrap items-center justify-center gap-5">
+            <AboutCard title="Configuration" subTitle="2 | 3 | 4 Bed Villas" Icon={LuBedDouble}/>
+            <AboutCard title="Price Range" subTitle="Starting ₹69.8 L" Icon={IoPricetagOutline}/>
+            <AboutCard title="Upcoming Resort" subTitle="3 Star Boutique Resort" Icon={FaUmbrellaBeach}/>
+            <AboutCard title="Prime Location" subTitle="Karjat" Icon={ IoLocationOutline }/>
+            <AboutCard title="Project Status" subTitle="On-going" Icon={IoConstructOutline}/>
+            <AboutCard title="Architecture" subTitle="Sustainable Design" Icon={GrUserWorker}/>
+            </div>
+        </div >
+    );
+};
+
+export default ContactPage;
