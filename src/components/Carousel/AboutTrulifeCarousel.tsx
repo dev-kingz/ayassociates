@@ -1,13 +1,11 @@
 "use client"
 import * as React from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselApi,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
