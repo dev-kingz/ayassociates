@@ -42,19 +42,19 @@ const projects = [
 
 export function ClubAmenitiesCarousel() {
   const [api, setApi] = React.useState<CarouselApi>()
-    const [current, setCurrent] = React.useState(0)
+  const [current, setCurrent] = React.useState(0)
 
-    React.useEffect(() => {
-        if (!api) {
-            return
-        }
+  React.useEffect(() => {
+    if (!api) {
+      return
+    }
 
-        setCurrent(api.selectedScrollSnap())
+    setCurrent(api.selectedScrollSnap())
 
-        api.on("select", () => {
-            setCurrent(api.selectedScrollSnap())
-        })
-    }, [api])
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap())
+    })
+  }, [api])
 
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
@@ -62,7 +62,7 @@ export function ClubAmenitiesCarousel() {
 
   return (
     <Carousel
-    setApi={setApi}
+      setApi={setApi}
       plugins={[plugin.current]}
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
@@ -83,17 +83,17 @@ export function ClubAmenitiesCarousel() {
         ))}
       </CarouselContent>
       <button
-                    className="absolute left-4 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center font-bold"
-                    onClick={() => api?.scrollTo(current - 1)}
-                >
-                    <FaAngleLeft className="h-9 w-9 text-white" />
-                </button>
-                <button
-                    className="absolute right-4 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center font-bold"
-                    onClick={() => api?.scrollTo(current + 1)}
-                >
-                    <FaAngleRight className="h-9 w-9 text-white" />
-                </button>
+        className="absolute left-4 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center font-bold"
+        onClick={() => api?.scrollTo(current - 1)}
+      >
+        <FaAngleLeft className="h-6 w-6 sm:h-9 sm:w-9 text-white" />
+      </button>
+      <button
+        className="absolute right-4 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center font-bold"
+        onClick={() => api?.scrollTo(current + 1)}
+      >
+        <FaAngleRight className="h-6 w-6 sm:h-9 sm:w-9 text-white" />
+      </button>
     </Carousel>
   );
 }

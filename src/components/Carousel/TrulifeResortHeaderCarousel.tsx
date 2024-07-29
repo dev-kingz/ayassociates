@@ -50,6 +50,7 @@ export function TrulifeResortHeaderCarousel() {
     return (
         <div className="relative w-full">
             <Carousel
+                setApi={setApi}
                 plugins={[plugin.current]}
                 onMouseEnter={plugin.current.stop}
                 onMouseLeave={plugin.current.reset}
@@ -57,7 +58,7 @@ export function TrulifeResortHeaderCarousel() {
                 <CarouselContent className="flex">
                     {projects.map((project, index) => (
                         <CarouselItem key={index} className="basis-full">
-                            <div className="relative rounded-lg overflow-hidden">
+                            <div className="relative overflow-hidden">
                                 <Image
                                     src={project.image}
                                     alt="TruLife Header Image"
