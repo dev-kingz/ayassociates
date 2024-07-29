@@ -57,7 +57,7 @@ export function TrulifeHeaderCarousel() {
                 <CarouselContent className="flex">
                     {projects.map((project, index) => (
                         <CarouselItem key={index} className="basis-full">
-                            <div className="relative rounded-lg overflow-hidden">
+                            <div className="relative overflow-hidden">
                                 <Image
                                     src={project.image}
                                     alt="TruLife Header Image"

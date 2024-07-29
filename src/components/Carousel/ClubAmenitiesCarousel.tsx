@@ -22,6 +22,12 @@ const projects = [
     image: "/gallery/images/Cafe.png",
   },
   {
+    image: "/gallery/images/SwimmingPool.png",
+  },
+  {
+    image: "/gallery/images/BanquetHall.png",
+  },
+  {
     image: "/gallery/images/SpaCenter.png",
   },
   {
