@@ -156,7 +156,7 @@ const TruLife = () => {
           </Button>
         </Link>
       </div>
-      <section className="OtherProjects w-[100vw] flex flex-col items-center justify-center self-stretch sm:py-20 gap-8">
+      <section className="OtherProjects w-[100vw] flex flex-col items-center justify-center self-stretch py-8 sm:py-20 gap-8">
         <div className="Header justify-center flex flex-col items-center gap-2 sm:gap-3">
           <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold">
             Other Projects
