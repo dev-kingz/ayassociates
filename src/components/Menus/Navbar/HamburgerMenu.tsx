@@ -90,7 +90,10 @@ export function HamburgerMenu() {
               <AccordionContent className="flex flex-col justify-center">
                 {projectList.map((projectItem) => (
                   <>
-                    <div className="h-[1px] bg-neutral-200 self-stretch"></div>
+                    <div
+                      key={projectItem.title}
+                      className="h-[1px] bg-neutral-200 self-stretch"
+                    ></div>
                     <Link
                       key={projectItem.title}
                       href={projectItem.href}
