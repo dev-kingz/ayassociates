@@ -67,12 +67,6 @@ export function TrulifeHeaderCarousel() {
                                     className="w-full h-[600px] object-cover"
                                 />
                                 <CardContent className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 gap-3 bg-gradient-to-t from-black/50 to-transparent">
-                                    <Image
-                                        src="/gallery/images/Trulife-Logo.png"
-                                        alt="TruLife Logo"
-                                        width={100}
-                                        height={100}
-                                    />
                                     <h1 className="text-3xl sm:text-5xl font-semibold text-white">TruLife</h1>
                                     <div className="Details flex flex-col">
                                         <p className="text-white">Karjat, Raigad</p>
