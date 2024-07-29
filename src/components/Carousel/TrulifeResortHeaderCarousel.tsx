@@ -50,6 +50,7 @@ export function TrulifeResortHeaderCarousel() {
     return (
         <div className="relative w-full">
             <Carousel
+                setApi={setApi}
                 plugins={[plugin.current]}
                 onMouseEnter={plugin.current.stop}
                 onMouseLeave={plugin.current.reset}
