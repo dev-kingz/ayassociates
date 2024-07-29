@@ -50,6 +50,7 @@ export function TrulifeHeaderCarousel() {
     return (
         <div className="relative w-full">
             <Carousel
+            setApi={setApi}
                 plugins={[plugin.current]}
                 onMouseEnter={plugin.current.stop}
                 onMouseLeave={plugin.current.reset}
@@ -97,7 +98,7 @@ export function TrulifeHeaderCarousel() {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                {/* <button
+                <button
                     className="absolute left-4 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center font-bold"
                     onClick={() => api?.scrollTo(current - 1)}
                 >
@@ -108,7 +109,7 @@ export function TrulifeHeaderCarousel() {
                     onClick={() => api?.scrollTo(current + 1)}
                 >
                     <FaAngleRight className="h-6 w-6 text-white" />
-                </button> */}
+                </button>
             </Carousel>
         </div>
     );
