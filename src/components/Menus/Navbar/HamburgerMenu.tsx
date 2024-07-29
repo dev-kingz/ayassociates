@@ -61,7 +61,10 @@ export function HamburgerMenu() {
               <AccordionContent className="flex flex-col justify-center">
                 {aboutList.map((aboutItem) => (
                   <>
-                    <div className="h-[1px] bg-neutral-200 self-stretch"></div>
+                    <div
+                      key={aboutItem.title}
+                      className="h-[1px] bg-neutral-200 self-stretch"
+                    ></div>
                     <Link
                       key={aboutItem.title}
                       href={aboutItem.href}

@@ -33,7 +33,7 @@ const TruLife = () => {
                             </div>
                             <div className="flex self-stretch gap-3">
                                 <Image
-                                    src="/gallery/logo/Trulife-Logo.png"
+                                    src="/gallery/logo/trulifelogo.png"
                                     alt="Trulife Logo"
                                     width={100}
                                     height={100}
