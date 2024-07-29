@@ -66,7 +66,7 @@ export function ChooseProjectCarousel() {
       plugins={[plugin.current]}
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
-      className="w-[310px] sm:w-full">
+      className="w-[280px] sm:w-full">
       <CarouselContent className="flex">
         {projects.map((project, index) => (
           <CarouselItem key={index} className="basis-full md:basis-1/2 lg:basis-1/3">

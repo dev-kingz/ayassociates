@@ -17,6 +17,7 @@ import { ProjectHighlightsCarousel } from "@/components/Carousel/ProjectHighligh
 import { TrulifeHeaderCarousel } from "@/components/Carousel/TrulifeHeaderCarousel";
 import { ProjectHighlightsAccordian } from "@/components/Accordian/ProjectHighlightsAccordian";
 import { ChooseProjectCarousel } from "@/components/Carousel/ChooseProject";
+import { AboutTrulifeCarousel } from "@/components/Carousel/AboutTrulifeCarousel";
 
 const TruLife = () => {
     return (
@@ -65,11 +66,12 @@ const TruLife = () => {
                 <AboutCard title="Project Status" subTitle="On-going" Icon={IoConstructOutline} />
                 <AboutCard title="Architecture" subTitle="Sustainable Design" Icon={GrUserWorker} />
             </div>
-            <section className="w-[100vw] flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-8 sm:px- py-14 gap-8 sm:gap-36">
+            <AboutTrulifeCarousel/>
+            <section className="w-[100vw] flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-14 py-14 gap-8 sm:gap-36">
                 <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-4 sm:gap-12">
                     <SectionHeader
-                        title="Our Products & Services"
-                        subTitle="Explore Our Diverse Properties"
+                        title="Project Highlights"
+                        subTitle="The Appreciation Of Value Addition"
                         titleColor="text-secondary"
                         subTitleColor="text-lime-900"
                     />
@@ -91,7 +93,9 @@ const TruLife = () => {
                        Other Projects
                     </h2>
                 </div>
+                <div className="Carousel sm:px-16">
                 <ChooseProjectCarousel />
+                </div>
             </section>
         </div >
     );
