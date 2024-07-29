@@ -10,7 +10,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { ListItem } from "./ListItems";
-import { projectList,aboutList } from "./ListItems/Lists";
+import { projectList, aboutList, hospitalityList } from "./ListItems/Lists";
 
 export function NavigationMenuC() {
   return (
@@ -52,6 +52,23 @@ export function NavigationMenuC() {
                   key={projectItem.title}
                   title={projectItem.title}
                   href={projectItem.href}
+                 />
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <NavigationMenuTrigger className="bg-transparent text-primary-foreground text-md rounded-full">
+            Hospitality
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid p-2 md:w-[230px] border-t-4 border-green-800">
+              {hospitalityList.map((hospitalityItem) => (
+                <ListItem
+                  key={hospitalityItem.title}
+                  title={hospitalityItem.title}
+                  href={hospitalityItem.href}
                  />
               ))}
             </ul>

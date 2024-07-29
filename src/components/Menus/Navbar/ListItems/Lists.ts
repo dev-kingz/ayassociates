@@ -34,3 +34,13 @@ export const aboutList: {
     href: "/about/blogs",
   },
 ];
+
+export const hospitalityList: {
+  title: string;
+  href: string;
+}[] = [
+  {
+    title: "Trulife club and resort",
+    href: "/hospitality/trulife-resort",
+  },
+];

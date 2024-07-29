@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/accordion";
 import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
-import { projectList } from "./ListItems/Lists";
+import { projectList, aboutList, hospitalityList } from "./ListItems/Lists";
 import { RiArrowRightWideFill } from "react-icons/ri";
 import { FaPhoneAlt } from "react-icons/fa";
 
@@ -54,11 +54,37 @@ export function HamburgerMenu() {
               </AccordionItem>
             </Link>
 
-            <AccordionItem value="item-3" className="py-1.5">
+            <AccordionItem value="item-1" className="py-1.5">
+              <AccordionTrigger className="font-[400] text-base">
+                About
+              </AccordionTrigger>
+              <AccordionContent className="flex flex-col justify-center">
+                {aboutList.map((aboutItem) => (
+                  <>
+                    <div className="h-[1px] bg-neutral-200 self-stretch"></div>
+                    <Link
+                      key={aboutItem.title}
+                      href={aboutItem.href}
+                      onClick={handleClose}
+                      className="flex items-center justify-between py-3 active:bg-neutral-200 active:text-accent active:scale-105"
+                    >
+                      <div className="flex flex-col gap-2">
+                        <h3 className="text-sm font-medium leading-none">
+                          {aboutItem.title}
+                        </h3>
+                      </div>
+                      <RiArrowRightWideFill className="fill-primary w-3 h-3" />
+                    </Link>
+                  </>
+                ))}
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2" className="py-1.5">
               <AccordionTrigger className="font-[400] text-base">
                 Projects
               </AccordionTrigger>
-              <AccordionContent className="flex flex-col justify-center items-start">
+              <AccordionContent className="flex flex-col justify-center">
                 {projectList.map((projectItem) => (
                   <>
                     <div className="h-[1px] bg-neutral-200 self-stretch"></div>
@@ -66,31 +92,45 @@ export function HamburgerMenu() {
                       key={projectItem.title}
                       href={projectItem.href}
                       onClick={handleClose}
-                      className="flex items-center justify-center py-3 active:bg-neutral-200 active:text-accent active:scale-105"
+                      className="flex items-center justify-between py-3 active:bg-neutral-200 active:text-accent active:scale-105"
                     >
                       <div className="flex flex-col gap-2">
                         <h3 className="text-sm font-medium leading-none">
                           {projectItem.title}
                         </h3>
-                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                          {projectItem.description}
-                        </p>
                       </div>
-                      <RiArrowRightWideFill className="fill-primary w-6 h-6" />
+                      <RiArrowRightWideFill className="fill-primary w-3 h-3" />
                     </Link>
                   </>
                 ))}
               </AccordionContent>
             </AccordionItem>
 
-            <Link href="/about" onClick={handleClose}>
-              <AccordionItem
-                value="item-2"
-                className="py-4 active:bg-neutral-200 active:text-accent active:scale-105"
-              >
-                About Us
-              </AccordionItem>
-            </Link>
+            <AccordionItem value="item-3" className="py-1.5">
+              <AccordionTrigger className="font-[400] text-base">
+                Hospitality
+              </AccordionTrigger>
+              <AccordionContent className="flex flex-col justify-center">
+                {hospitalityList.map((hospitalityItem) => (
+                  <>
+                    <div className="h-[1px] bg-neutral-200 flex self-stretch "></div>
+                    <Link
+                      key={hospitalityItem.title}
+                      href={hospitalityItem.href}
+                      onClick={handleClose}
+                      className="flex items-center justify-between py-3 active:bg-neutral-200 active:text-accent active:scale-105"
+                    >
+                      <div className="flex flex-col ">
+                        <h3 className="text-sm font-medium leading-none">
+                          {hospitalityItem.title}
+                        </h3>
+                      </div>
+                      <RiArrowRightWideFill className="fill-primary w-3 h-3" />
+                    </Link>
+                  </>
+                ))}
+              </AccordionContent>
+            </AccordionItem>
 
             <Link href="/contact" onClick={handleClose}>
               <AccordionItem
