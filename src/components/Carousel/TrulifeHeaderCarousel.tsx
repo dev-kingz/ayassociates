@@ -63,7 +63,7 @@ export function TrulifeHeaderCarousel() {
                                     alt="TruLife Header Image"
                                     width={2000}
                                     height={300}
-                                    className="w-full h-[600px] object-cover rounded-lg"
+                                    className="w-full h-[600px] object-cover"
                                 />
                                 <CardContent className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 gap-3 bg-gradient-to-t from-black/50 to-transparent">
                                         <Image
