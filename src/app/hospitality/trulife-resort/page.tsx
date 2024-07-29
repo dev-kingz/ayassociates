@@ -68,9 +68,17 @@ const TruLife = () => {
                 </div>
             </section > */}
             <section className="ClubAmenities w-[100vw] flex flex-col items-center justify-center self-stretch px-8 gap-2 sm:gap-8">
-                <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold justify-center items-center ">
-                    Trulife Club Amenities
-                </h2>
+                <div className="flex flex-col gap-2 items-center justify-center self-stretch">
+                    <p className="text-secondary text-sm sm:text-md font-secondary">
+                        4 Star Level Services & Facilities
+                    </p>
+                    <h2 className="text-2xl sm:text-4xl text-black font-medium justify-center items-center ">
+                        World Class Amenities
+                    </h2>
+                    <p className="sm:px-96 text-secondary text-sm sm:text-md font-normal font-secondary text-center">
+                        Treat yourself to revitalizing spa therapies, relax beside the scenic pool, and delight in delicious meals at our renowned restaurant.
+                    </p>
+                </div>
                 <ClubAmenitiesCarousel />
             </section>
             <section className="ClubAmenities w-[100vw] flex flex-col items-start justify-start self-stretch px-6 sm:px-40 py-3 sm:py-14 gap-4 sm:gap-8">
