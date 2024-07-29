@@ -5,8 +5,8 @@ import SocialIcons from "../Icons/SocialIcons";
 
 export function Footer() {
   return (
-    <footer className="Footer flex w-full flex-col text-white mt-44 sm:mt-72">
-      <section className="TopSection relative flex flex-col-reverse md:flex-row md:justify-between md:items-center py-10 sm:px-36 bg-primary">
+    <footer className="Footer flex w-full flex-col text-white mt-96 sm:mt-52">
+      <section className="TopSection relative flex flex-col-reverse md:flex-row md:justify-between md:items-center pb-10 sm:py-10 sm:px-36 bg-primary">
         <div className="flex flex-col self-stretch items-center sm:items-start gap-6 md:gap-12 px-8">
           <div className="TopSectionText flex flex-col gap-2 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl font-medium">
@@ -26,13 +26,13 @@ export function Footer() {
             </Button>
           </Link>
         </div>
-        <div className="h-32">
+        <div className="h-10 sm:h-32">
           <Image
             width={"500"}
             height={"500"}
             src="/gallery/images/footer-house-image.png"
             alt="House"
-            className="absolute right-0 -top-48 sm:bottom-0"
+            className="absolute right-0 -top-[380px] sm:-top-48 sm:bottom-0"
           />
         </div>
       </section>
