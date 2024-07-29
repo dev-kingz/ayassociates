@@ -21,7 +21,7 @@ const TruLife = () => {
     return (
         <div className="flex grow flex-col items-center self-stretch">
             <TrulifeHeaderCarousel />
-            <section className="About py-12 flex flex-col items-center justify-center bg-white gap-5 sm:gap-8">
+            <section className="About py-12 flex flex-col items-center justify-center bg-white gap-5 sm:gap-12">
                 <div className="flex flex-col px-4 sm:px-40 sm:flex-row gap-6 sm:gap-28">
                     <div className="flex flex-col gap-6 basis-2/5">
                         <div className="w-full flex-col justify-start items-start inline-flex gap-3">
