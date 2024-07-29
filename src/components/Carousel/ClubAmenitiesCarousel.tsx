@@ -49,16 +49,16 @@ export function ClubAmenitiesCarousel() {
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
       className="w-[310px] sm:w-full py-6">
-      <CarouselContent className="flex">
+      <CarouselContent className="flex gap-4">
         {projects.map((project, index) => (
-          <CarouselItem key={index} className="basis-full md:basis-1/2 lg:basis-1/6">
+          <CarouselItem key={index} className="basis-full md:basis-1/2 lg:basis-1/5">
             <div className="relative rounded-lg overflow-hidden">
               <Image
                 src={project.image}
                 alt="Image"
                 width={600}
                 height={500}
-                className="w-full h-[360px] sm:h-[270px] object-cover rounded-lg"
+                className="w-full h-[360px] sm:h-[310px] object-cover rounded-lg"
               />
             </div>
           </CarouselItem>
