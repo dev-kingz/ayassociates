@@ -3,12 +3,14 @@ import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
+  CarouselApi,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
 import Image from "next/image";
 
 const projects = [
@@ -27,12 +29,28 @@ const projects = [
 ];
 
 export function AboutTrulifeCarousel() {
+  const [api, setApi] = React.useState<CarouselApi>()
+  const [current, setCurrent] = React.useState(0)
+
+  React.useEffect(() => {
+    if (!api) {
+      return
+    }
+
+    setCurrent(api.selectedScrollSnap())
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap())
+    })
+  }, [api])
+
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
 
   return (
     <Carousel
+      setApi={setApi}
       plugins={[plugin.current]}
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
@@ -52,8 +70,18 @@ export function AboutTrulifeCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <button
+        className="absolute left-4 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center font-bold"
+        onClick={() => api?.scrollTo(current - 1)}
+      >
+        <FaAngleLeft className="h-8 w-8 text-white" />
+      </button>
+      <button
+        className="absolute right-4 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center font-bold"
+        onClick={() => api?.scrollTo(current + 1)}
+      >
+        <FaAngleRight className="h-8 w-8 text-white" />
+      </button>
     </Carousel>
   );
 }
