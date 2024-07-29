@@ -18,6 +18,7 @@ import { TrulifeHeaderCarousel } from "@/components/Carousel/TrulifeHeaderCarous
 import { ProjectHighlightsAccordian } from "@/components/Accordian/ProjectHighlightsAccordian";
 import { ChooseProjectCarousel } from "@/components/Carousel/ChooseProject";
 import { AboutTrulifeCarousel } from "@/components/Carousel/AboutTrulifeCarousel";
+import { ClubAmenitiesCarousel } from "@/components/Carousel/ClubAmenitiesCarousel";
 
 const TruLife = () => {
     return (
@@ -67,7 +68,7 @@ const TruLife = () => {
                 <AboutCard title="Architecture" subTitle="Sustainable Design" Icon={GrUserWorker} />
             </div>
             <AboutTrulifeCarousel/>
-            <section className="w-[100vw] flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-14 py-14 gap-8 sm:gap-36">
+            <section className="w-[100vw] flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-14 py-20 gap-8 sm:gap-36">
                 <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-4 sm:gap-12">
                     <SectionHeader
                         title="Project Highlights"
@@ -79,13 +80,11 @@ const TruLife = () => {
                 </div>
                 <ProjectHighlightsCarousel />
             </section>
-            {/* <section className="ClubAmenities w-[100vw] flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-8 sm:px- py-14 gap-8 sm:gap-36">
-                <div className="Header justify-center flex flex-col items-center gap-2 sm:gap-3">
-                    <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold">
+            {/* <section className="ClubAmenities w-[100vw] flex flex-col items-center sm:items-start justify-center self-stretch px-8 py-14 gap-8">
+                    <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold justify-center items-center ">
                        Trulife Club Amenities
                     </h2>
-                </div>
-                <ProjectHighlightsCarousel />
+                <ClubAmenitiesCarousel/>
             </section> */}
             <section className="OtherProjects w-[100vw] flex flex-col items-center justify-center self-stretch py-20 gap-8">
                 <div className="Header justify-center flex flex-col items-center gap-2 sm:gap-3">
