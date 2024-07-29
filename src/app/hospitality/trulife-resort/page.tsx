@@ -72,7 +72,7 @@ const TruLife = () => {
                     <p className="text-secondary text-sm sm:text-md font-secondary">
                         4 Star Level Services & Facilities
                     </p>
-                    <h2 className="text-2xl sm:text-4xl text-black font-medium justify-center items-center ">
+                    <h2 className="text-3xl sm:text-4xl text-black font-medium justify-center items-center ">
                         World Class Amenities
                     </h2>
                     <p className="sm:px-96 text-secondary text-sm sm:text-md font-normal font-secondary text-center">
@@ -80,6 +80,22 @@ const TruLife = () => {
                     </p>
                 </div>
                 <ClubAmenitiesCarousel />
+            </section>
+            <section className="Luxury w-[100vw] flex flex-col items-center justify-center self-stretch px-4 sm:px-40 py-6 gap-4 sm:gap-8">
+                <div className="flex flex-col gap-2 items-center justify-center self-stretch">
+                    <p className= "text-gray-500 text-xs sm:text-md font-normal font-secondary text-center">
+                        Surrounded by lush landscapes,<br/>
+                        For those seeking a perfect blend of luxury and intimacy, our resort promises an unforgettable escape into<br/>
+                        refined elegance and natural beauty.
+                    </p>
+                </div>
+                <Image
+                    src="/gallery/images/Luxury-Image.png"
+                    alt="Trulife Resort Map"
+                    width={500}
+                    height={500}
+                    className="w-full"
+                />
             </section>
             <section className="ClubAmenities w-[100vw] flex flex-col items-start justify-start self-stretch px-6 sm:px-40 py-3 sm:py-14 gap-4 sm:gap-8">
                 <SectionHeader
