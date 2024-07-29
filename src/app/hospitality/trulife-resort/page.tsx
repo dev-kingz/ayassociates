@@ -39,7 +39,7 @@ const TruLife = () => {
                                 width={200}
                                 height={200}
                             />
-                            <p className=" text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9">
+                            <p className=" text-gray-600 text-sm sm:text-md font-normal font-secondary">
                                 3 star boutique resort
                                 situated in the heart of Karjat, Raigad.
                             </p>
@@ -47,7 +47,7 @@ const TruLife = () => {
                     </div>
                 </div>
                 <div className="flex flex-col gap-6 basis-3/4">
-                    <p className="text-left text-gray-600 text-md font-normal font-secondary leading-9">
+                    <p className="text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9">
                         TruLife Club Resort is a 3-star boutique destination with 4-star amenities, sprawling across 2 acres in a nature-centric setting. It features 42 fully furnished suites, each designed for ultimate comfort and luxury. Embrace an eco-friendly ethos with a focus on sports and wellness, ensuring a serene retreat for all guests.<br />
 
                         This project offers passive income opportunities for both domestic and international investors. Through an innovative partnership model, investors gain full ownership of the resort and enjoy its rewards without any maintenance responsibilities. Additionally, investors benefit from extra perks, making it an attractive investment in their homeland.
@@ -102,39 +102,51 @@ const TruLife = () => {
                     className="w-full"
                 />
             </section>
-            <section className="About px-8 sm:px-40 py-2 flex flex-col sm:flex-row items-start justify-between bg-white gap-5 sm:gap-32 ">
-                <div className="flex flex-col gap-6 basis-1/4">
-                    <div className="w-full flex-col justify-start items-start inline-flex gap-3">
-                        <div className="flex justify-start items-center gap-4">
-                            <div className="w-[75px] h-[1px] bg-secondary" />
-                            <div className={`text-secondary text-md font-normal font-secondary`}>
-                                About Project
+            <section className="About py-12 flex flex-col items-center justify-center bg-white gap-5 sm:gap-8">
+                <div className="flex flex-col px-4 sm:px-40 sm:flex-row gap-6 basis-1/4 sm:gap-32">
+                    <div className="flex flex-col gap-6 basis-1/4">
+                        <div className="w-full flex-col justify-start items-start inline-flex gap-3">
+                            <div className="flex justify-start items-center gap-4">
+                                <div className="w-[75px] h-[1px] bg-secondary" />
+                                <div className={`text-secondary text-md font-normal font-secondary`}>
+                                    About Project
+                                </div>
+                            </div>
+                            <div className="flex self-stretch gap-3">
+                                <Image
+                                    src="/gallery/logo/Trulife-Logo.png"
+                                    alt="Trulife Logo"
+                                    width={100}
+                                    height={100}
+                                />
+                                <div className="Text flex text-start justify-start flex-col gap-2">
+                                    <h1
+                                        className="self-stretch text-black text-3xl sm:text-4xl font-semibold"
+                                    >
+                                        Trulife
+                                    </h1>
+                                    <p className=" text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9">
+                                        Your Exquisite Sanctuary of Nature and Luxury
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div className="flex self-stretch gap-3">
-                            <Image
-                                src="/gallery/logo/Trulife-Logo.png"
-                                alt="Trulife Logo"
-                                width={100}
-                                height={100}
-                            />
-                        </div>
+                    </div>
+                    <div className="flex flex-col gap-6 basis-3/4">
+                        <p className="text-left text-gray-600 text-md font-normal font-secondary leading-9">
+                            Picture yourself in one of 131 resort-themed villas, nestled around 45,000 sq ft of lush gardens. Choose from a range of 2/3/4 Bed villas, each meticulously designed with dimensions spanning 1400 to 3000 sq ft. TruLife is not just a residence; it&apos;s a landmark in Karjat, seamlessly connecting you to nature and modern living. Operated by Holistic Nature Homes LLP, The TruLife Club, spanning 22,000 sq ft, redefines holistic living with a landscaped track, state-of-the-art gym, Café, and a multi-cuisine restaurant. Welcome to TruLife, where every facet of life finds its perfect harmony.
+                        </p>
                     </div>
                 </div>
-                <div className="flex flex-col gap-6 basis-3/4">
-                    <p className="text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9">
-                        Picture yourself in one of 131 resort-themed villas, nestled around 45,000 sq ft of lush gardens. Choose from a range of 2/3/4 Bed villas, each meticulously designed with dimensions spanning 1400 to 3000 sq ft. TruLife is not just a residence; it&apos;s a landmark in Karjat, seamlessly connecting you to nature and modern living. Operated by Holistic Nature Homes LLP, The TruLife Club, spanning 22,000 sq ft, redefines holistic living with a landscaped track, state-of-the-art gym, Café, and a multi-cuisine restaurant. Welcome to TruLife, where every facet of life finds its perfect harmony.
-                    </p>
+                <div className="flex px-4 sm:px-40 flex-wrap items-center justify-center gap-5 ">
+                    <AboutCard title="Configuration" subTitle="2 | 3 | 4 Bed Villas" Icon={LuBedDouble} />
+                    <AboutCard title="Price Range" subTitle="Starting ₹69.8 L" Icon={IoPricetagOutline} />
+                    <AboutCard title="Upcoming Resort" subTitle="3 Star Boutique Resort" Icon={FaUmbrellaBeach} />
+                    <AboutCard title="Prime Location" subTitle="Karjat" Icon={IoLocationOutline} />
+                    <AboutCard title="Project Status" subTitle="On-going" Icon={IoConstructOutline} />
+                    <AboutCard title="Architecture" subTitle="Sustainable Design" Icon={GrUserWorker} />
                 </div>
             </section>
-            <div className="flex flex-wrap items-center justify-center gap-5">
-                <AboutCard title="Configuration" subTitle="2 | 3 | 4 Bed Villas" Icon={LuBedDouble} />
-                <AboutCard title="Price Range" subTitle="Starting ₹69.8 L" Icon={IoPricetagOutline} />
-                <AboutCard title="Upcoming Resort" subTitle="3 Star Boutique Resort" Icon={FaUmbrellaBeach} />
-                <AboutCard title="Prime Location" subTitle="Karjat" Icon={IoLocationOutline} />
-                <AboutCard title="Project Status" subTitle="On-going" Icon={IoConstructOutline} />
-                <AboutCard title="Architecture" subTitle="Sustainable Design" Icon={GrUserWorker} />
-            </div>
         </div >
     );
 };
