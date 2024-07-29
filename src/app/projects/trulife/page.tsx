@@ -13,10 +13,13 @@ import { IoLocationOutline } from "react-icons/io5";
 import { IoPricetagOutline } from "react-icons/io5";
 import { IoConstructOutline } from "react-icons/io5";
 import { GrUserWorker } from "react-icons/gr";
+import { ProjectHighlightsCarousel } from "@/components/Carousel/ProjectHighlightsCarousel";
+import { TrulifeHeaderCarousel } from "@/components/Carousel/TrulifeHeaderCarousel";
 
 const ContactPage = () => {
     return (
         <div className="flex grow flex-col items-center self-stretch">
+            <TrulifeHeaderCarousel/>
             <section className="About px-8 sm:px-40 py-12 flex flex-col sm:flex-row items-start justify-between bg-white gap-5 sm:gap-32 ">
                 <div className="flex flex-col gap-6 basis-1/4">
                     <div className="w-full flex-col justify-start items-start inline-flex gap-3">
@@ -61,6 +64,18 @@ const ContactPage = () => {
             <AboutCard title="Project Status" subTitle="On-going" Icon={IoConstructOutline}/>
             <AboutCard title="Architecture" subTitle="Sustainable Design" Icon={GrUserWorker}/>
             </div>
+            {/* <section className="w-[100vw] flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-8 sm:px-2 py-8 gap-8 sm:gap-36">
+        <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-4 sm:gap-12">
+          <SectionHeader
+            title="Our Products & Services"
+            subTitle="Explore Our Diverse Properties"
+            titleColor="text-secondary"
+            subTitleColor="text-lime-900"
+          />
+          <ProductsServicesAccordian />
+        </div>
+        <ProjectHighlightsCarousel/>
+      </section> */}
         </div >
     );
 };
