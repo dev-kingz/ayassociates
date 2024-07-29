@@ -14,6 +14,8 @@ import { ProjectHighlightsAccordian } from "@/components/Accordian/ProjectHighli
 import { ChooseProjectCarousel } from "@/components/Carousel/ChooseProject";
 import { AboutTrulifeCarousel } from "@/components/Carousel/AboutTrulifeCarousel";
 import { ClubAmenitiesCarousel } from "@/components/Carousel/ClubAmenitiesCarousel";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const TruLife = () => {
     return (
@@ -50,7 +52,7 @@ const TruLife = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-6 basis-3/4">
-                        <p className="text-left text-gray-600 text-md font-normal font-secondary leading-9">
+                        <p className="text-left text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9">
                             Picture yourself in one of 131 resort-themed villas, nestled around 45,000 sq ft of lush gardens. Choose from a range of 2/3/4 Bed villas, each meticulously designed with dimensions spanning 1400 to 3000 sq ft. TruLife is not just a residence; it&apos;s a landmark in Karjat, seamlessly connecting you to nature and modern living. Operated by Holistic Nature Homes LLP, The TruLife Club, spanning 22,000 sq ft, redefines holistic living with a landscaped track, state-of-the-art gym, Café, and a multi-cuisine restaurant. Welcome to TruLife, where every facet of life finds its perfect harmony.
                         </p>
                     </div>
@@ -79,10 +81,46 @@ const TruLife = () => {
             </section>
             <section className="ClubAmenities w-[100vw] flex flex-col items-center justify-center self-stretch px-8 py-14 gap-8">
                 <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold justify-center items-center ">
-                    Trulife Club Amenities
+                    The TRULIFE Club Amenities
                 </h2>
                 <ClubAmenitiesCarousel />
             </section>
+            <section className="ClubAmenities w-[100vw] flex flex-col items-start justify-start self-stretch px-6 sm:px-40 py-3 sm:py-14 gap-4 sm:gap-8">
+                <SectionHeader
+                    title="Connectivity"
+                    subTitle="Explore the Landmark of Karjat"
+                    titleColor="text-secondary"
+                    subTitleColor="text-lime-900"
+                />
+                <p className="text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9">
+                    Envision your holidays in the lap of luxury at TruLife, potentially sparking a transformative shift in the priorities of life. Addressing the current urban challenges of battling pollution and traffic chaos, TruLife offers an alternative narrative a harmonious blend of work and leisure. This exquisite Villa township, located in vibrant Karjat, strikes the perfect equilibrium between urban connectivity and serene seclusion.
+                </p>
+                <h1 className="text-2xl sm:text-4xl text-lime-900 font-medium justify-start text-start items-start ">
+                    Nearby Locations
+                </h1>
+                <Image
+                    src="/gallery/images/Trulife-Resort-Map.png"
+                    alt="Trulife Resort Map"
+                    width={500}
+                    height={500}
+                    className="w-full"
+                />
+            </section>
+            <div className="Header px-4 sm:px-52 py-12 sm:py-16 justify-center flex self-stretch flex-col items-center gap-3 sm:gap-6 bg-primary">
+                <h2 className="text-2xl sm:text-4xl font-medium text-white text-center">
+                Want to Know More About the Project? <br/>
+                We Are Here to Help!
+                </h2>
+                <Link href="/">
+                    <Button
+                        variant="secondary"
+                        size="lg"
+                        className="shadow-xl bg-secondary text-white"
+                    >
+                        Instant Callback
+                    </Button>
+                </Link>
+            </div>
             <section className="OtherProjects w-[100vw] flex flex-col items-center justify-center self-stretch sm:py-20 gap-8">
                 <div className="Header justify-center flex flex-col items-center gap-2 sm:gap-3">
                     <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold">
@@ -94,6 +132,7 @@ const TruLife = () => {
                 </div>
             </section>
         </div >
+
     );
 };
 
