@@ -15,8 +15,9 @@ import { IoConstructOutline } from "react-icons/io5";
 import { GrUserWorker } from "react-icons/gr";
 import { ProjectHighlightsCarousel } from "@/components/Carousel/ProjectHighlightsCarousel";
 import { TrulifeHeaderCarousel } from "@/components/Carousel/TrulifeHeaderCarousel";
+import { ProductsHighlightsAccordian } from "@/components/Accordian/ProductsHighlightsAccordian";
 
-const ContactPage = () => {
+const TruLife = () => {
     return (
         <div className="flex grow flex-col items-center self-stretch">
             <TrulifeHeaderCarousel/>
@@ -64,7 +65,7 @@ const ContactPage = () => {
             <AboutCard title="Project Status" subTitle="On-going" Icon={IoConstructOutline}/>
             <AboutCard title="Architecture" subTitle="Sustainable Design" Icon={GrUserWorker}/>
             </div>
-            {/* <section className="w-[100vw] flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-8 sm:px-2 py-8 gap-8 sm:gap-36">
+        <section className="w-[100vw] flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-8 sm:px- py-14 gap-8 sm:gap-36">
         <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-4 sm:gap-12">
           <SectionHeader
             title="Our Products & Services"
@@ -72,12 +73,12 @@ const ContactPage = () => {
             titleColor="text-secondary"
             subTitleColor="text-lime-900"
           />
-          <ProductsServicesAccordian />
+          <ProductsHighlightsAccordian />
         </div>
         <ProjectHighlightsCarousel/>
-      </section> */}
+      </section>
         </div >
     );
 };
 
-export default ContactPage;
+export default TruLife ;

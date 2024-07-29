@@ -17,17 +17,17 @@ import Link from "next/link";
 
 const projects = [
     {
-        image: "/gallery/images/Trulife-Header-Image1.png",
+        image: "/gallery/images/Trulife-Resort-Header-Image1.png",
     },
     {
-        image: "/gallery/images/Trulife-Header-Image2.png",
+        image: "/gallery/images/Trulife-Resort-Header-Image2.png",
     },
     {
-        image: "/gallery/images/Trulife-Header-Image3.png",
+        image: "/gallery/images/Trulife-Resort-Header-Image3.png",
     },
 ];
 
-export function TrulifeHeaderCarousel() {
+export function TrulifeResortHeaderCarousel() {
     const [api, setApi] = React.useState<CarouselApi>()
     const [current, setCurrent] = React.useState(0)
 
@@ -65,39 +65,11 @@ export function TrulifeHeaderCarousel() {
                                     height={300}
                                     className="w-full h-[600px] object-cover"
                                 />
-                                <CardContent className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 gap-3 bg-gradient-to-t from-black/50 to-transparent">
-                                        <Image
-                                            src="/gallery/images/Trulife-Logo.png"
-                                            alt="TruLife Logo"
-                                            width={100}
-                                            height={100}
-                                            />
-                                        <h1 className="text-3xl sm:text-5xl font-semibold text-white">TruLife</h1>
-                                    <div className="Details flex flex-col">
-                                        <p className="text-white">Karjat, Raigad</p>
-                                        <div className="HeaderButtons flex flex-row gap-4 mt-4">
-                                            <Link href="/">
-                                                <Button
-                                                    variant="secondary"
-                                                    size="lg"
-                                                    className="bg-secondary text-white shadow-xl"
-                                                >
-                                                    Instant Callback
-                                                </Button>
-                                            </Link>
-                                            <Link href="/">
-                                                <Button variant="outline" size="lg" className="text-white shadow-xl border-white">
-                                                    Download Brochure
-                                                </Button>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </CardContent>
                             </div>
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                {/* <button
+                <button
                     className="absolute left-4 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center font-bold"
                     onClick={() => api?.scrollTo(current - 1)}
                 >
@@ -108,7 +80,7 @@ export function TrulifeHeaderCarousel() {
                     onClick={() => api?.scrollTo(current + 1)}
                 >
                     <FaAngleRight className="h-6 w-6 text-white" />
-                </button> */}
+                </button>
             </Carousel>
         </div>
     );

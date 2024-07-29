@@ -12,8 +12,8 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
 const images = [
-  "/gallery/images/Products-Services-Carousel-Picture1.jpg",
-  "/gallery/images/Products-Services-Carousel-Picture2.jpg",
+  "/gallery/images/Project-Highlights-Image1.png",
+  "/gallery/images/Project-Highlights-Image2.png",
   "/gallery/images/Products-Services-Carousel-Picture3.jpg",
 ];
 
