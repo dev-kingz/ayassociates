@@ -83,7 +83,7 @@ const TruLife = () => {
             </section>
             <section className="Luxury w-[100vw] flex flex-col items-center justify-center self-stretch px-4 sm:px-40 py-6 gap-4 sm:gap-8">
                 <div className="flex flex-col gap-2 items-center justify-center self-stretch">
-                    <p className= "text-gray-500 text-xs sm:text-md font-normal font-secondary text-center">
+                    <p className= "text-gray-500 text-sm sm:text-md font-secondary text-center">
                         Surrounded by lush landscapes,<br/>
                         For those seeking a perfect blend of luxury and intimacy, our resort promises an unforgettable escape into<br/>
                         refined elegance and natural beauty.
@@ -91,27 +91,6 @@ const TruLife = () => {
                 </div>
                 <Image
                     src="/gallery/images/Luxury-Image.png"
-                    alt="Trulife Resort Map"
-                    width={500}
-                    height={500}
-                    className="w-full"
-                />
-            </section>
-            <section className="ClubAmenities w-[100vw] flex flex-col items-start justify-start self-stretch px-6 sm:px-40 py-3 sm:py-14 gap-4 sm:gap-8">
-                <SectionHeader
-                    title="Connectivity"
-                    subTitle="Explore the Landmark of Karjat"
-                    titleColor="text-secondary"
-                    subTitleColor="text-lime-900"
-                />
-                <p className="text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9">
-                    Envision your holidays in the lap of luxury at TruLife, potentially sparking a transformative shift in the priorities of life. Addressing the current urban challenges of battling pollution and traffic chaos, TruLife offers an alternative narrative a harmonious blend of work and leisure. This exquisite Villa township, located in vibrant Karjat, strikes the perfect equilibrium between urban connectivity and serene seclusion.
-                </p>
-                <h1 className="text-2xl sm:text-4xl text-lime-900 font-medium justify-start text-start items-start ">
-                    Nearby Locations
-                </h1>
-                <Image
-                    src="/gallery/images/Trulife-Resort-Map.png"
                     alt="Trulife Resort Map"
                     width={500}
                     height={500}
@@ -135,21 +114,11 @@ const TruLife = () => {
                                     width={100}
                                     height={100}
                                 />
-                                <div className="Text flex text-start justify-start flex-col gap-2">
-                                    <h1
-                                        className="self-stretch text-black text-3xl sm:text-4xl font-semibold"
-                                    >
-                                        Trulife
-                                    </h1>
-                                    <p className=" text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9">
-                                        Your Exquisite Sanctuary of Nature and Luxury
-                                    </p>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col gap-6 basis-3/4">
-                        <p className="text-left text-gray-600 text-md font-normal font-secondary leading-9">
+                        <p className="text-left text-gray-600 txt-sm sm:text-md font-normal font-secondary leading-9">
                             Picture yourself in one of 131 resort-themed villas, nestled around 45,000 sq ft of lush gardens. Choose from a range of 2/3/4 Bed villas, each meticulously designed with dimensions spanning 1400 to 3000 sq ft. TruLife is not just a residence; it&apos;s a landmark in Karjat, seamlessly connecting you to nature and modern living. Operated by Holistic Nature Homes LLP, The TruLife Club, spanning 22,000 sq ft, redefines holistic living with a landscaped track, state-of-the-art gym, Café, and a multi-cuisine restaurant. Welcome to TruLife, where every facet of life finds its perfect harmony.
                         </p>
                     </div>
@@ -162,7 +131,7 @@ const TruLife = () => {
                     <AboutCard title="Project Status" subTitle="On-going" Icon={IoConstructOutline} />
                     <AboutCard title="Architecture" subTitle="Sustainable Design" Icon={GrUserWorker} />
                 </div>
-            </section>
+                </section>
         </div >
     );
 };
