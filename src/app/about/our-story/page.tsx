@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const ContactPage = () => {
+const StoryPage = () => {
   return (
     <div className="flex grow flex-col items-center self-stretch">
       <TitleHeader image="/gallery/images/About-Us-Header-Image.jpg" titleText="Our Story" subTitleText="at AY Associates Nature Homes" />
@@ -105,4 +105,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default StoryPage;
