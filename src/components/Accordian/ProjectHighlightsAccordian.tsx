@@ -38,7 +38,7 @@ export function ProjectHighlightsAccordian() {
           </p>
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-3">
+      <AccordionItem value="item-4">
         <AccordionTrigger className="text-secondary text-lg sm:text-2xl">
         04. Live in the Hub
         </AccordionTrigger>
