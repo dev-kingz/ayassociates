@@ -67,13 +67,13 @@ const TruLife = () => {
                     <ContactForm />
                 </div>
             </section > */}
-            <section className="ClubAmenities w-[100vw] flex flex-col items-center justify-center self-stretch px-8 py-14 gap-8">
+            <section className="ClubAmenities w-[100vw] flex flex-col items-center justify-center self-stretch px-8 sm:py-14 gap-2 sm:gap-8">
                 <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold justify-center items-center ">
                     Trulife Club Amenities
                 </h2>
                 <ClubAmenitiesCarousel />
             </section>
-            <section className="ClubAmenities w-[100vw] flex flex-col items-start justify-start self-stretch px-6 sm:px-40 py-14 gap-8">
+            <section className="ClubAmenities w-[100vw] flex flex-col items-start justify-start self-stretch px-6 sm:px-40 py-3 sm:py-14 gap-4 sm:gap-8">
                 <SectionHeader
                     title="Connectivity"
                     subTitle="Explore the Landmark of Karjat"
@@ -94,7 +94,7 @@ const TruLife = () => {
                     className="w-full"
                 />
             </section>
-            <section className="About px-8 sm:px-40 py-12 flex flex-col sm:flex-row items-start justify-between bg-white gap-5 sm:gap-32 ">
+            <section className="About px-8 sm:px-40 py-4 sm:py-12 flex flex-col sm:flex-row items-start justify-between bg-white gap-5 sm:gap-32 ">
                 <div className="flex flex-col gap-6 basis-1/4">
                     <div className="w-full flex-col justify-start items-start inline-flex gap-3">
                         <div className="flex justify-start items-center gap-4">

@@ -74,13 +74,13 @@ export function AboutTrulifeCarousel() {
         className="absolute left-4 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center font-bold"
         onClick={() => api?.scrollTo(current - 1)}
       >
-        <FaAngleLeft className="h-8 w-8 text-white" />
+        <FaAngleLeft className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
       </button>
       <button
         className="absolute right-4 top-1/2 flex h-8 w-8 -translate-y-1/2 transform items-center justify-center font-bold"
         onClick={() => api?.scrollTo(current + 1)}
       >
-        <FaAngleRight className="h-8 w-8 text-white" />
+        <FaAngleRight className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
       </button>
     </Carousel>
   );
