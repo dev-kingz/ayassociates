@@ -3,9 +3,33 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaPlay, FaChevronDown } from "react-icons/fa";
+import { FaPlay, FaChevronDown, FaArrowRight } from "react-icons/fa";
 
-const AnimatedHero = () => {
+interface AnimatedHeroProps {
+  backgroundImage?: string;
+  badge: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  primaryButtonText: string;
+  primaryButtonLink: string;
+  secondaryButtonText: string;
+  secondaryButtonLink: string;
+  scrollTarget?: string;
+}
+
+const AnimatedHeroReusable = ({
+  backgroundImage,
+  badge,
+  title,
+  subtitle,
+  description,
+  primaryButtonText,
+  primaryButtonLink,
+  secondaryButtonText,
+  secondaryButtonLink,
+  scrollTarget = '.About'
+}: AnimatedHeroProps) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -13,12 +37,21 @@ const AnimatedHero = () => {
   }, []);
 
   const scrollToContent = () => {
-    const aboutSection = document.querySelector('.About');
-    aboutSection?.scrollIntoView({ behavior: 'smooth' });
+    const targetSection = document.querySelector(scrollTarget);
+    targetSection?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const backgroundStyle = backgroundImage 
+    ? { backgroundImage: `url('${backgroundImage}')` }
+    : {};
+
   return (
-    <section className="relative flex h-[100vh] grow items-center justify-center self-stretch bg-hero bg-cover bg-center bg-fixed overflow-hidden">
+    <section 
+      className={`relative flex h-[100vh] grow items-center justify-center self-stretch ${
+        backgroundImage ? 'bg-cover bg-center bg-fixed' : 'bg-hero bg-cover bg-center bg-fixed'
+      } overflow-hidden`}
+      style={backgroundStyle}
+    >
       {/* Overlay with gradient */}
       <div className="absolute inset-0 bg-gradient-hero" />
       
@@ -38,51 +71,42 @@ const AnimatedHero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-6 fade-in-down">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-            <span className="text-sm font-medium">Building Nature Communities Since 2019</span>
+            <span className="text-sm font-medium">{badge}</span>
           </div>
           
           {/* Main headline */}
           <h1 className="mb-6 text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight fade-in-up stagger-1">
-            Building{" "}
-            <span className="relative inline-block">
-              <span className="bg-secondary bg-clip-text text-transparent">
-                Nature
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-500 opacity-20 blur-lg" />
-            </span>
-            <br />
-            Communities
+            {title}
           </h1>
           
           {/* Subtitle */}
           <p className="mb-8 text-lg sm:text-xl lg:text-2xl text-gray-200 max-w-2xl mx-auto fade-in-up stagger-2">
-            Invest in Tranquility, Live in Luxury
+            {subtitle}
           </p>
           
           {/* Description */}
           <p className="mb-10 text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed fade-in-up stagger-3">
-            Experience holistic living in nature-centric communities designed for modern luxury. 
-            From farm houses to integrated resort estates, discover your perfect sanctuary.
+            {description}
           </p>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12 fade-in-up stagger-4">
-            <Link href="/contact">
+            <Link href={primaryButtonLink}>
               <Button
                 size="lg"
                 className="group bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-2xl hover-lift transition-all duration-300"
               >
-                <span>Enquire Now</span>
-                <FaPlay className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <span>{primaryButtonText}</span>
+                <FaArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
-            <Link href="/projects">
+            <Link href={secondaryButtonLink}>
               <Button 
                 variant="outline" 
                 size="lg" 
                 className="group bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20 px-8 py-4 text-lg font-semibold rounded-full shadow-2xl hover-lift transition-all duration-300"
               >
-                Explore Projects
+                {secondaryButtonText}
               </Button>
             </Link>
           </div>
@@ -103,4 +127,4 @@ const AnimatedHero = () => {
   );
 };
 
-export default AnimatedHero;
+export default AnimatedHeroReusable;

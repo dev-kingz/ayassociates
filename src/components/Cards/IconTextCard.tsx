@@ -50,7 +50,7 @@ const IconTextCard: React.FC<IconTextCardProps> = ({
       <div className="relative flex-1 flex flex-col justify-between">
         <div className="text-start mb-4">
           <div className="flex items-center gap-2 mb-2">
-            <div className={`w-8 h-0.5 ${bgColor === 'bg-white' ? 'bg-lime-400' : 'bg-white/60'} transition-all duration-500 group-hover:w-12`} />
+            <div className={`w-8 h-0.5 ${bgColor === 'bg-white' ? 'bg-green-400' : 'bg-white/60'} transition-all duration-500 group-hover:w-12`} />
             <h3 className={`text-xs font-medium uppercase tracking-wider ${titleColor} opacity-70`}>
               Premium Offerings
             </h3>

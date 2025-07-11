@@ -99,7 +99,7 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+        <Button type="submit" className="bg-secondary">Submit</Button>
       </form>
     </Form>
   );

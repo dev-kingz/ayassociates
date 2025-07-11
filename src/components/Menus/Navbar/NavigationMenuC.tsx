@@ -1,6 +1,5 @@
 import * as React from "react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 
 import {
   NavigationMenu,
@@ -11,7 +10,8 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { ListItem } from "./ListItems";
-import { projectList, aboutList, hospitalityList } from "./ListItems/Lists";
+import { projectList, hospitalityList } from "./ListItems/Lists";
+import { cn } from "@/lib/utils";
 
 interface NavigationMenuCProps {
   isScrolled?: boolean;
@@ -33,24 +33,12 @@ export function NavigationMenuC({ isScrolled = false }: NavigationMenuCProps) {
           </Link>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
-        <NavigationMenuTrigger className={cn(
-          "bg-transparent text-md rounded-full transition-colors duration-300 font-medium",
-          isScrolled ? "text-lime-900 hover:text-secondary" : "text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] hover:text-gray-300"
-        )}>
-            About
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid p-2 md:w-[230px] border-t-4 border-green-800">
-              {aboutList.map((aboutItem) => (
-                <ListItem
-                  key={aboutItem.title}
-                  title={aboutItem.title}
-                  href={aboutItem.href}
-                 />
-              ))}
-            </ul>
-          </NavigationMenuContent>
+         <NavigationMenuItem>
+          <Link href="/about" legacyBehavior passHref>
+            <NavigationMenuLink className={cn("transition-colors duration-300 font-medium", textColor)}>
+              About
+            </NavigationMenuLink>
+          </Link>
         </NavigationMenuItem>
 
         <NavigationMenuItem>

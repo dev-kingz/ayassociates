@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/accordion";
 import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
-import { projectList, aboutList, hospitalityList } from "./ListItems/Lists";
+import { projectList, hospitalityList } from "./ListItems/Lists";
 import { RiArrowRightWideFill } from "react-icons/ri";
 import { FaPhoneAlt } from "react-icons/fa";
 import { cn } from "@/lib/utils";
@@ -62,6 +62,16 @@ export function HamburgerMenu({ isScrolled = false }: HamburgerMenuProps) {
               </AccordionItem>
             </Link>
 
+            <Link href="/about" onClick={handleClose}>
+              <AccordionItem
+                value="item-1"
+                className="py-4 active:bg-neutral-200 active:text-accent active:scale-105"
+              >
+                About
+              </AccordionItem>
+            </Link>
+{/* 
+
             <AccordionItem value="item-1" className="py-1.5">
               <AccordionTrigger className="font-[400] text-base">
                 About
@@ -89,7 +99,7 @@ export function HamburgerMenu({ isScrolled = false }: HamburgerMenuProps) {
                   </>
                 ))}
               </AccordionContent>
-            </AccordionItem>
+            </AccordionItem> */}
 
             <AccordionItem value="item-2" className="py-1.5">
               <AccordionTrigger className="font-[400] text-base">

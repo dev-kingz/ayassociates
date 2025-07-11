@@ -27,7 +27,7 @@ const FloatingElements: React.FC<FloatingElementsProps> = ({
     return Array.from({ length: count }).map((_, i) => (
       <div
         key={i}
-        className={`absolute w-2 h-2 bg-lime-400/20 rounded-full animate-bounce-subtle`}
+        className={`absolute w-2 h-2 bg-green-400/20 rounded-full animate-bounce-subtle`}
         style={{
           left: `${Math.random() * 100}%`,
           top: `${Math.random() * 100}%`,

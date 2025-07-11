@@ -35,9 +35,6 @@ const TruLife = () => {
                 height={200}
                 className="hover:scale-105 transition-transform duration-300"
               />
-              <p className="text-gray-600 text-lg font-normal font-secondary leading-relaxed">
-                3 star boutique resort situated in the heart of Karjat, Raigad.
-              </p>
             </div>
           </div>
         </div>
@@ -93,8 +90,8 @@ const TruLife = () => {
                 <Image
                   src="/gallery/logo/Trulife-Logo.png"
                   alt="Trulife Logo"
-                  width={300}
-                  height={300}
+                  width={140}
+                  height={140}
                   className="hover:scale-105 transition-transform duration-300"
                 />
               </div>

@@ -118,7 +118,7 @@ const ProjectsPage = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <AnimatedSection animation="fade-in" className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-lime-100 text-lime-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <FaLeaf className="w-4 h-4" />
               Featured Projects
             </div>
@@ -144,7 +144,7 @@ const ProjectsPage = () => {
                   <div className="flex items-center gap-4 mb-4">
                     <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                       project.status === 'Ongoing' ? 'bg-blue-100 text-blue-700' :
-                      project.status === 'Available' ? 'bg-lime-100 text-lime-700' :
+                      project.status === 'Available' ? 'bg-green-100 text-green-700' :
                       'bg-orange-100 text-orange-700'
                     }`}>
                       {project.status}
