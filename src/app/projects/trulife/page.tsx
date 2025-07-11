@@ -44,17 +44,17 @@ const TruLife = () => {
         <div className="relative z-10 flex flex-col px-4 sm:px-40 sm:flex-row gap-6 sm:gap-28">
           <div className="flex flex-col gap-6 basis-2/5 fade-in-left">
             <div className="w-full flex-col justify-start items-start inline-flex gap-3">
-              <div className="flex justify-start items-center gap-4">
-                <div className="w-[75px] h-[1px] bg-gradient-to-r from-secondary to-green-400" />
-                <div className="text-secondary text-md font-normal font-secondary">
-                  About Project
-                </div>
-              </div>
+              <div className="flex flex-col items-start justify-start gap-3">
+          <div className="inline-flex items-center gap-2 bg-lime-100 text-lime-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
+            Project Highlights
+          </div>
+          <h2 className="text-3xl sm:text-4xl text-black font-bold text-start">
+            Trulife <span className="text-secondary">Resort</span>
+          </h2>
+          </div>
               <div className="flex self-stretch gap-3">
                 <div className="Text flex text-start justify-start flex-col gap-2">
-                  <h1 className="self-stretch text-black text-3xl sm:text-4xl font-semibold">
-                    Trulife <span className="text-secondary">Resort</span>
-                  </h1>
                   <p className="text-gray-500 text-sm sm:text-md font-normal font-secondary">
                     Your Exquisite Sanctuary of
                     <br />
@@ -116,12 +116,15 @@ const TruLife = () => {
       </AnimatedSection>
       <AnimatedSection animation="slide-in-left" className="w-full flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-14 sm:py-20 gap-8 sm:gap-36 bg-white">
         <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-4 sm:gap-12 fade-in-left">
-          <SectionHeader
-            title="Project Highlights"
-            subTitle="The Appreciation Of Value Addition"
-            titleColor="text-secondary"
-            subTitleColor="text-lime-900"
-          />
+          <div className="flex flex-col items-start justify-start gap-3">
+          <div className="inline-flex items-center gap-2 bg-lime-100 text-lime-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
+            Project Highlights
+          </div>
+          <h2 className="text-3xl sm:text-4xl text-black font-bold text-start">
+            The Appreciation Of <span className="text-secondary">Value Addition</span>
+          </h2>
+          </div>
           <ProjectHighlightsAccordian />
         </div>
         <div className="fade-in-right">
@@ -131,25 +134,24 @@ const TruLife = () => {
       
       <AnimatedSection animation="fade-in" className="ClubAmenities relative w-full flex flex-col items-center justify-center self-stretch px-8 py-14 gap-8 bg-gradient-to-br from-green-50 via-white to-gray-50 overflow-hidden">
         <FloatingElements variant="shapes" density="low" />
-        <div className="relative z-10 fade-in-up">
-          <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold justify-center items-center text-center">
+           <h2 className="text-3xl sm:text-4xl text-black font-bold text-center">
             The TRULIFE Club <span className="text-secondary">Amenities</span>
           </h2>
-        </div>
         <div className="relative z-10 fade-in-up stagger-2">
           <ClubAmenitiesCarousel />
         </div>
       </AnimatedSection>
       
       <AnimatedSection animation="fade-in" className="ClubAmenities w-full flex flex-col items-start justify-start self-stretch px-6 sm:px-40 py-3 sm:py-14 gap-4 sm:gap-8 bg-white">
-        <div className="fade-in-left">
-          <SectionHeader
-            title="Connectivity"
-            subTitle="Explore the Landmark of Karjat"
-            titleColor="text-secondary"
-            subTitleColor="text-lime-900"
-          />
-        </div>
+        <div className="flex flex-col items-start justify-start gap-3">
+          <div className="inline-flex items-center gap-2 bg-lime-100 text-lime-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
+            Connectivity
+          </div>
+          <h2 className="text-3xl sm:text-4xl text-black font-bold text-start">
+            Explore the <span className="text-secondary">Landmark of Karjat</span>
+          </h2>
+          </div>
         <p className="text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9 fade-in-right">
           Envision your holidays in the lap of luxury at TruLife, potentially
           sparking a transformative shift in the priorities of life. Addressing
@@ -159,9 +161,6 @@ const TruLife = () => {
           strikes the perfect equilibrium between urban connectivity and serene
           seclusion.
         </p>
-          <h1 className="text-2xl sm:text-4xl text-lime-900 font-medium justify-start text-start items-start fade-in-up">
-            Nearby Locations
-          </h1>
         
         <div className="fade-in-up flex w-full justify-center">
           <Image
@@ -174,12 +173,12 @@ const TruLife = () => {
         </div>
       </AnimatedSection>
       
-      <div className="Header relative px-4 sm:px-52 py-12 sm:py-16 justify-center flex self-stretch flex-col items-center gap-3 sm:gap-6 bg-gradient-to-br from-green-700 to-green-900 overflow-hidden">
+      <div className="Header relative px-4 sm:px-52 py-12 sm:py-16 justify-center flex self-stretch flex-col items-center gap-3 sm:gap-6 bg-gradient-to-br from-lime-700 via-lime-800 to-secondary overflow-hidden">
         <FloatingElements variant="particles" density="low" />
         <div className="relative z-10 fade-in-up">
           <h2 className="text-2xl sm:text-4xl font-medium text-white text-center">
             Want to Know More About the Project? <br />
-            <span className="text-secondary">We Are Here to Help!</span>
+            We Are Here to Help!
           </h2>
         </div>
         <Link href="/contact">
@@ -195,7 +194,7 @@ const TruLife = () => {
       
       <AnimatedSection animation="fade-in" className="OtherProjects w-full flex flex-col items-center justify-center self-stretch sm:py-20 gap-8 bg-gradient-to-br from-gray-50 via-white to-green-50/30">
         <div className="Header justify-center flex flex-col items-center gap-2 sm:gap-3 fade-in-up">
-          <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold">
+          <h2 className="text-2xl sm:text-4xl text-black font-semibold">
             Other <span className="text-secondary">Projects</span>
           </h2>
         </div>

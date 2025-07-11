@@ -24,10 +24,10 @@ export function NavigationMenuC({ isScrolled = false }: NavigationMenuCProps) {
   
   return (
     <NavigationMenu className="hidden sm:flex justify-center">
-      <NavigationMenuList className="gap-7">
+      <NavigationMenuList className="gap-8">
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={cn("transition-colors duration-300 font-medium", textColor)}>
+            <NavigationMenuLink className={cn("transition-colors duration-300 font-medium px-2", textColor)}>
               Home
             </NavigationMenuLink>
           </Link>
@@ -35,7 +35,7 @@ export function NavigationMenuC({ isScrolled = false }: NavigationMenuCProps) {
 
          <NavigationMenuItem>
           <Link href="/about" legacyBehavior passHref>
-            <NavigationMenuLink className={cn("transition-colors duration-300 font-medium", textColor)}>
+            <NavigationMenuLink className={cn("transition-colors duration-300 font-medium px-2", textColor)}>
               About
             </NavigationMenuLink>
           </Link>
@@ -43,7 +43,7 @@ export function NavigationMenuC({ isScrolled = false }: NavigationMenuCProps) {
 
         <NavigationMenuItem>
           <NavigationMenuTrigger className={cn(
-            "bg-transparent text-md rounded-full transition-colors duration-300 font-medium",
+            "bg-transparent text-md rounded-full transition-colors duration-300 font-medium px-2",
             isScrolled ? "text-lime-900 hover:text-secondary" : "text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] hover:text-gray-300"
           )}>
             Projects
@@ -63,7 +63,7 @@ export function NavigationMenuC({ isScrolled = false }: NavigationMenuCProps) {
 
         <NavigationMenuItem>
           <NavigationMenuTrigger className={cn(
-            "bg-transparent text-md rounded-full transition-colors duration-300 font-medium",
+            "bg-transparent text-md rounded-full transition-colors duration-300 font-medium px-2",
             isScrolled ? "text-lime-900 hover:text-secondary" : "text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] hover:text-gray-300"
           )}>
             Hospitality
@@ -83,7 +83,7 @@ export function NavigationMenuC({ isScrolled = false }: NavigationMenuCProps) {
 
         <NavigationMenuItem>
           <Link href="/contact" legacyBehavior passHref>
-            <NavigationMenuLink className={cn("transition-colors duration-300 font-medium", textColor)}>
+            <NavigationMenuLink className={cn("transition-colors duration-300 font-medium px-2", textColor)}>
               Contact Us
             </NavigationMenuLink>
           </Link>

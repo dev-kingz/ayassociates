@@ -220,7 +220,7 @@ const AboutPage = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 px-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <AnimatedSection animation="slide-in-left" className="space-y-8">
