@@ -16,10 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <div className="flex min-h-screen grow flex-col items-center justify-between self-stretch font-primary">
+      <body className="overflow-x-hidden">
+        <div className="flex min-h-screen grow flex-col items-center justify-between self-stretch font-primary overflow-x-hidden">
           <Navbar />
-          <main className="item-center flex grow justify-start self-stretch">
+          <main className="item-center flex grow justify-start self-stretch overflow-x-hidden">
             {children}
           </main>
           <Footer />

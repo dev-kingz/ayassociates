@@ -1,3 +1,5 @@
+"use client";
+
 import SectionHeader from "@/components/Header/SectionHeader";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -8,49 +10,37 @@ import IconTextCard from "@/components/Cards/IconTextCard";
 import { ProductsServicesAccordian } from "@/components/Accordian/ProductsServicesAccordian";
 import { ProductsServicesCarousel } from "@/components/Carousel/ProductsServicesCarousel";
 import { ChooseProjectCarousel } from "@/components/Carousel/ChooseProject";
-import { RiPoliceBadgeLine } from "react-icons/ri";
-import { GiStarsStack } from "react-icons/gi";
-import { FaRegHandshake } from "react-icons/fa";
 import Image from "next/image";
+import AnimatedHero from "@/components/Hero/AnimatedHero";
+import AnimatedSection from "@/components/Animation/AnimatedSection";
+import EnhancedUniquenessSection from "@/components/Sections/EnhancedUniquenessSection";
+import EnhancedCTASection from "@/components/Sections/EnhancedCTASection";
+import EnhancedStatsSection from "@/components/Sections/EnhancedStatsSection";
+import EnhancedTestimonialsSection from "@/components/Sections/EnhancedTestimonialsSection";
+import EnhancedFeatureShowcase from "@/components/Sections/EnhancedFeatureShowcase";
+import FloatingElements from "@/components/Enhancement/FloatingElements";
 
 export default function Home() {
   return (
-    <div className="flex grow flex-col items-center self-stretch">
-      <section className="relative flex h-[80vh] grow items-center justify-center self-stretch bg-hero bg-cover bg-center pt-3 sm:h-[90vh]">
-        <div className="text-center text-white">
-          <h1 className="mb-4 px-4 text-4xl font-semibold sm:text-6xl">
-            Building Nature Communities
-          </h1>
-          <p className="mb-8 px-6 text-sm sm:text-lg">
-            Invest in Tranquility, Live in Luxury
-          </p>
-          <div className="flex justify-center flex-row gap-6">
-            <Link href="/">
-              <Button
-                variant="secondary"
-                size="lg"
-                className="shadow-xl bg-secondary text-white"
-              >
-                Enquire Now
-              </Button>
-            </Link>
-            <Link href="/">
-              <Button variant="outline" size="lg" className="shadow-xl">
-                Learn More
-              </Button>
-            </Link>
-          </div>
+    <div className="flex grow flex-col items-center self-stretch overflow-x-hidden">
+      {/* Modern Animated Hero Section */}
+      <AnimatedHero />
+      
+      {/* About Section with Animation */}
+      <AnimatedSection animation="fade-in" className="About relative px-8 sm:px-48 py-20 flex flex-col sm:flex-row items-start justify-between bg-white gap-5 sm:gap-36 overflow-hidden">
+        {/* Floating Elements */}
+        <FloatingElements variant="dots" density="low" />
+        
+        <div className="relative z-10 fade-in-left">
+          <SectionHeader
+            title="About Us"
+            subTitle="About Holistic Nature Homes"
+            titleColor="text-secondary"
+            subTitleColor="text-lime-900"
+          />
         </div>
-      </section>
-      <section className="About px-8 sm:px-48 py-12 flex flex-col sm:flex-row items-start justify-between bg-white gap-5 sm:gap-36 ">
-        <SectionHeader
-          title="About Us"
-          subTitle="About Holistic Nature Homes"
-          titleColor="text-secondary"
-          subTitleColor="text-lime-900"
-        />
-        <div className="flex flex-col gap-6 max-w-lg">
-          <p className="text-left text-gray-600 text-md font-normal font-secondary leading-9">
+        <div className="relative z-10 flex flex-col gap-6 max-w-lg fade-in-right">
+          <p className="text-left text-gray-600 text-lg font-normal font-secondary leading-relaxed">
             Holistic Group specializes in building communities and providing
             end-to-end solutions to customers aspiring for a nature-centric
             lifestyle. We Design, Build, Develop & Manage these communities. In
@@ -61,57 +51,81 @@ export default function Home() {
             designs for homes, unparalleled hospitality experiences, and
             thoughtful solutions for senior living.
           </p>
-          <Link href="/">
+          <Link href="/about">
             <Button
               variant="secondary"
               size="lg"
-              className="shadow-xl bg-secondary text-white"
+              className="group shadow-xl bg-secondary text-white hover:bg-secondary/90 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
               Learn More
+              <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </Button>
           </Link>
         </div>
-      </section>
-      <section className="WhyChooseUs px-2 sm:px-12 py-8 lex flex-col items-center justify-center self-stretch ">
-        <div className="Header justify-center flex flex-col items-center gap-2 sm:gap-3">
-          <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold">
-            Why Choose Us?
+      </AnimatedSection>
+
+      {/* Why Choose Us Section with Enhanced Cards */}
+      <AnimatedSection animation="fade-in" className="WhyChooseUs relative px-4 sm:px-12 py-20 flex flex-col items-center justify-center self-stretch bg-gradient-to-br from-gray-50 via-white to-green-50/30 overflow-hidden">
+        {/* Floating Elements */}
+        <FloatingElements variant="shapes" density="medium" />
+        
+        <div className="relative z-10 Header justify-center flex flex-col items-center gap-4 mb-16 fade-in-up">
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            Our Advantages
+          </div>
+          <h2 className="text-4xl sm:text-5xl text-lime-900 font-bold text-center">
+            Why Choose <span className="text-secondary">Us?</span>
           </h2>
-          <p className="px-30 sm:px-80 text-center text-md text-gray-500">
+          <p className="text-center text-lg text-gray-600 max-w-3xl leading-relaxed">
             We provide end to end solutions & undertake Design, Approval,
             Procurement, Construction and Maintenance of all projects with our
             in house team of experts
           </p>
         </div>
-        <div className="Cards py-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
+        <div className="relative z-10 Cards py-8 flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-8 flex-wrap">
           <IconTextCard
             Icon={MdSecurity}
             title="Secured & Fenced"
-            text="Round-the-Clock Safety and Security for All"
+            text="Round-the-Clock Safety and Security for All residents with advanced surveillance systems"
             bgColor="bg-secondary"
+            delay={0}
           />
           <IconTextCard
             Icon={GrUserManager}
             title="Managed & Maintained"
-            text="Hassle Free & Cost Effective"
+            text="Hassle Free & Cost Effective community management with professional maintenance teams"
             bgColor="bg-white"
+            delay={100}
           />
           <IconTextCard
             Icon={FaMapLocationDot}
             title="Prime Location & Smart Investment"
-            text="Connectivity & Well-Thought-Out Returns"
+            text="Connectivity & Well-Thought-Out Returns with strategic location advantages"
             bgColor="bg-secondary"
+            delay={200}
           />
           <IconTextCard
             Icon={FaHouseChimney}
             title="Integrated Resort Community Estates"
-            text="Robust Amenities & Infrastructure"
+            text="Robust Amenities & Infrastructure with world-class facilities and services"
             bgColor="bg-white"
+            delay={300}
           />
         </div>
-      </section>
-      <section className="w-[100vw] flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-8 sm:px-2 py-8 gap-8 sm:gap-36">
-        <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-4 sm:gap-12">
+      </AnimatedSection>
+
+      {/* Enhanced Stats Section */}
+      <EnhancedStatsSection />
+
+      {/* Enhanced Feature Showcase */}
+      <EnhancedFeatureShowcase />
+
+      {/* Products & Services Section */}
+      <AnimatedSection animation="slide-in-left" className="w-full flex flex-col lg:flex-row items-center lg:items-start justify-center self-stretch px-8 sm:px-12 py-20 gap-8 lg:gap-36 bg-white">
+        <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-8 lg:gap-12 fade-in-left">
           <SectionHeader
             title="Our Products & Services"
             subTitle="Explore Our Diverse Properties"
@@ -120,88 +134,37 @@ export default function Home() {
           />
           <ProductsServicesAccordian />
         </div>
-        <ProductsServicesCarousel />
-      </section>
-      <section className="ChooseProject w-[100vw] px-8 md:px-24 lg:px-52 py-8 flex flex-col items-center justify-center self-stretch gap-11">
-        <SectionHeader
-          title="Choose Your Project"
-          subTitle="Discover Your Ideal Nature Home"
-          titleColor="text-secondary"
-          subTitleColor="text-lime-900"
-        />
-        <ChooseProjectCarousel />
-      </section>
-      <div className="Header px-4 sm:px-52 py-12 sm:py-20 justify-center flex self-stretch flex-col items-center gap-3 sm:gap-6 bg-primary">
-        <h2 className="text-2xl sm:text-4xl font-medium text-white text-center">
-          Thread By Thread, Leaf By Leaf, We Weave A Tapestry Of Holistic
-          Living.
-        </h2>
-        <Link href="/">
-          <Button
-            variant="secondary"
-            size="lg"
-            className="shadow-xl bg-secondary text-white"
-          >
-            Get Quick Callback
-          </Button>
-        </Link>
-      </div>
-      <section className="UniquenessSection w-[100vw] flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-8 sm:px-48 py-12 gap-8 sm:gap-28">
-        <Image
-          src="/gallery/images/Uniqueness-Section-Image.png"
-          alt="About Us"
-          width={500}
-          height={500}
-          className="rounded-lg"
-        />
-        <div className="flex flex-col items-center sm:items-start justify-center self-stretch gap-8">
+        <div className="fade-in-right">
+          <ProductsServicesCarousel />
+        </div>
+      </AnimatedSection>
+
+      {/* Choose Project Section */}
+      <AnimatedSection animation="fade-in" className="ChooseProject relative w-full px-8 md:px-24 lg:px-52 py-20 flex flex-col items-center justify-center self-stretch gap-16 bg-gradient-to-br from-green-50 via-white to-gray-50 overflow-hidden">
+        {/* Floating Elements */}
+        <FloatingElements variant="dots" density="low" />
+        
+        <div className="relative z-10 fade-in-up">
           <SectionHeader
-            title="Our Uniqueness"
-            subTitle="Why Choose Us?"
+            title="Choose Your Project"
+            subTitle="Discover Your Ideal Nature Home"
             titleColor="text-secondary"
             subTitleColor="text-lime-900"
           />
-          <div className="UniquenessCards flex flex-col items-start gap-8">
-            <div className="Card flex flex-col items-start justify-center self-stretch gap-4">
-              <div className="flex items-start sm:items-center justify-start sm:justify-center">
-                <GiStarsStack className="w-6 h-6 text-lime-900 " />
-                <h3 className="text-lg text-lime-900 font-semibold ml-2">
-                  Setting Ourselves Apart
-                </h3>
-              </div>
-              <p className="text-md text-gray-500 text-start sm:text-left">
-                Discover Unmatched Expertise, Impeccable Quality, and Tailored
-                Solutions as per your needs.
-              </p>
-            </div>
-            <div className="Card flex flex-col items-start justify-center self-stretch gap-4">
-              <div className="flex items-center justify-center">
-                <RiPoliceBadgeLine className="w-6 h-6 text-lime-900 " />
-                <h3 className="text-lg text-lime-900 font-semibold ml-2">
-                  Elevate Your Experience
-                </h3>
-              </div>
-              <p className="text-md text-gray-500 text-start sm:text-left">
-                Immerse yourself in a lifestyle curated by experts, ensuring
-                unparalleled quality and a personalized touch.
-              </p>
-            </div>
-            <div className="Card flex flex-col items-start justify-center self-stretch gap-4">
-              <div className="flex items-start justify-start">
-                <FaRegHandshake className="w-6 h-6 text-lime-900 " />
-                <h3 className="text-lg text-lime-900 font-semibold ml-2">
-                  Embark on Your Journey with Us
-                </h3>
-              </div>
-              <p className="text-md text-gray-500 text-start sm:text-left">
-                Let us be a part of your adventure! Experience a guided journey
-                enriched by our unwavering commitment to excellence. Let&apos;s
-                make this journey together, uniquely yours.
-              </p>
-            </div>
-          </div>
         </div>
-      </section>
+        <div className="relative z-10 fade-in-up stagger-2">
+          <ChooseProjectCarousel />
+        </div>
+      </AnimatedSection>
+
+      {/* Enhanced Testimonials Section */}
+      <EnhancedTestimonialsSection />
+
+      {/* Enhanced CTA Section */}
+      <EnhancedCTASection />
+
+      {/* Enhanced Uniqueness Section */}
+      <EnhancedUniquenessSection />
     </div>
   );
 }
