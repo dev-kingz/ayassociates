@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className="overflow-x-hidden">
         <div className="flex min-h-screen grow flex-col items-center justify-between self-stretch font-primary overflow-x-hidden">
           <Navbar />
-          <main className="item-center flex grow justify-start self-stretch overflow-x-hidden pt-[70px]">
+          <main className="item-center flex grow justify-start self-stretch overflow-x-hidden">
             {children}
           </main>
           <Footer />

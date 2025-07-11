@@ -51,8 +51,8 @@ const ContactPage = () => {
       <AnimatedSection animation="fade-in" className="ContactUsSection relative flex items-center justify-center flex-col self-stretch grow py-16 bg-gradient-to-br from-gray-50 via-white to-green-50/30 overflow-hidden">
         <FloatingElements variant="shapes" density="low" />
         <div className="relative z-10 Title flex items-center justify-center flex-col grow gap-2 text-center fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-lime-100 text-lime-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <div className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
             Our Location
           </div>
           <h2 className="text-2xl sm:text-4xl font-semibold text-primary leading-snug">

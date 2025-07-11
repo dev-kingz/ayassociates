@@ -64,7 +64,7 @@ export function TrulifeResortHeaderCarousel() {
                                     alt="TruLife Header Image"
                                     width={2000}
                                     height={300}
-                                    className="w-full h-[600px] object-cover"
+                                    className="w-full h-[100vh] object-cover"
                                 />
                             </div>
                         </CarouselItem>

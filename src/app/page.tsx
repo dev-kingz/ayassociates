@@ -55,7 +55,7 @@ export default function Home() {
             <Button
               variant="secondary"
               size="lg"
-              className="group shadow-xl bg-secondary text-white hover:bg-secondary/90 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              className="group rounded-full shadow-xl bg-secondary text-white hover:bg-secondary/90 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
               Learn More
               <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -72,8 +72,8 @@ export default function Home() {
         <FloatingElements variant="shapes" density="medium" />
         
         <div className="relative z-10 Header justify-center flex flex-col items-center gap-4 mb-16 fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-lime-100 text-lime-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <div className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
             Our Advantages
           </div>
           <h2 className="text-3xl sm:text-4xl text-black font-bold text-center">
@@ -127,8 +127,8 @@ export default function Home() {
       <AnimatedSection animation="slide-in-left" className="w-full flex flex-col lg:flex-row items-center lg:items-start justify-center self-stretch px-8 sm:px-12 py-20 gap-8 lg:gap-36 bg-white">
         <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-8 lg:gap-12 fade-in-left">
           <div className="relative z-10 Header justify-start flex flex-col items-start gap-4 fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-lime-100 text-lime-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
             Our Products & Services
           </div>
           <h2 className="text-3xl sm:text-4xl text-black font-bold text-center">
@@ -153,8 +153,8 @@ export default function Home() {
         <FloatingElements variant="dots" density="low" />
         
           <div className="relative z-10 Header justify-center flex flex-col items-center gap-4 fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-lime-100 text-lime-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
             Choose Your Project
           </div>
           <h2 className="text-3xl sm:text-4xl text-black font-bold text-center">

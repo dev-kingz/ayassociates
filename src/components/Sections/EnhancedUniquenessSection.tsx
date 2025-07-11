@@ -24,7 +24,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ Icon, title, description, del
       
       {/* Icon */}
       <div className="relative mb-4">
-        <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
+        <div className="w-16 h-16 bg-gradient-to-br from-lime-600 to-secondary rounded-2xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
           <Icon className="w-8 h-8 text-white" />
         </div>
       </div>
@@ -40,7 +40,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ Icon, title, description, del
       </div>
       
       {/* Decorative element */}
-      <div className="absolute top-4 right-4 w-2 h-2 bg-green-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      <div className="absolute top-4 right-4 w-2 h-2 bg-lime-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
     </div>
   );
 };
@@ -83,15 +83,15 @@ const EnhancedUniquenessSection: React.FC = () => {
     <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-green-50/30">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16 fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
-            <FaLeaf className="w-4 h-4" />
+        <div className="relative z-10 Header justify-center flex flex-col items-center gap-4 fade-in-up">
+          <div className="inline-flex items-center gap-2 bg-lime-100 text-lime-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
             Why Choose Us
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Our <span className="text-green-600">Uniqueness</span>
+          <h2 className="text-3xl sm:text-4xl text-black font-bold text-center">
+          Our<span className="text-secondary"> Uniqueness</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed text-center">
             Discover what sets us apart in creating exceptional nature-centric communities 
             that blend luxury, sustainability, and meaningful living experiences.
           </p>
@@ -110,23 +110,7 @@ const EnhancedUniquenessSection: React.FC = () => {
           ))}
         </div>
         
-        {/* Bottom CTA */}
-        <div className="text-center mt-16 fade-in-up" style={{ animationDelay: '600ms' }}>
-          <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-8 text-white relative overflow-hidden">
-            <div className="absolute inset-0 bg-black/10" />
-            <div className="relative">
-              <h3 className="text-2xl font-bold mb-4">
-                Ready to Experience the Difference?
-              </h3>
-              <p className="text-green-100 mb-6 max-w-2xl mx-auto">
-                Join hundreds of satisfied families who have already discovered the joy of nature-centric living.
-              </p>
-              <button className="bg-white text-green-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors transform hover:scale-105 duration-300 shadow-lg">
-                Start Your Journey Today
-              </button>
-            </div>
-          </div>
-        </div>
+       
       </div>
     </section>
   );

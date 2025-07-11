@@ -92,7 +92,7 @@ const StatCard: React.FC<StatCardProps> = ({ icon, number, label, suffix = '', d
       </div>
       
       {/* Sparkle effect */}
-      <div className="absolute bottom-4 right-4 w-2 h-2 bg-green-400 rounded-full opacity-0 group-hover:opacity-100 animate-pulse transition-opacity duration-500" />
+      <div className="absolute bottom-4 right-4 w-2 h-2 bg-lime-400 rounded-full opacity-0 group-hover:opacity-100 animate-pulse transition-opacity duration-500" />
     </div>
   );
 };
@@ -134,8 +134,8 @@ const EnhancedStatsSection: React.FC = () => {
       <div className="relative z-10 container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-lime-100 text-lime-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
             Our Achievements
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">

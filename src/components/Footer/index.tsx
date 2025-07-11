@@ -6,7 +6,7 @@ import SocialIcons from "../Icons/SocialIcons";
 export function Footer() {
   return (
     <footer className="Footer flex w-full flex-col text-white mt-96 sm:mt-52">
-      <section className="TopSection relative flex flex-col-reverse md:flex-row md:justify-between md:items-center pb-10 sm:py-10 sm:px-36 bg-primary">
+      <section className="TopSection relative flex flex-col-reverse md:flex-row md:justify-between md:items-center pb-10 sm:py-10 sm:px-36 bg-gradient-to-r from-lime-700 via-lime-800 to-secondary">
         <div className="flex flex-col self-stretch items-center sm:items-start gap-6 md:gap-12 px-8">
           <div className="TopSectionText flex flex-col gap-2 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl font-medium">
@@ -20,7 +20,7 @@ export function Footer() {
             <Button
               variant="secondary"
               size="lg"
-              className="bg-secondary text-white"
+              className="bg-white text-green-800 rounded-full shadow-lg hover:bg-white/90 transition-all duration-300"
             >
               Instant Callback
             </Button>

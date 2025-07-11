@@ -37,7 +37,7 @@ const AnimatedHero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-6 fade-in-down">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            <div className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
             <span className="text-sm font-medium">Building Nature Communities Since 2019</span>
           </div>
           

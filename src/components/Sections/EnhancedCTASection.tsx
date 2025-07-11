@@ -7,7 +7,7 @@ import { FaPhone, FaArrowRight, FaLeaf } from 'react-icons/fa';
 
 const EnhancedCTASection: React.FC = () => {
   return (
-    <section className="relative py-20 bg-gradient-to-br from-green-800 via-green-700 to-green-900 overflow-hidden">
+    <section className="relative py-20 bg-gradient-to-br from-lime-700 via-lime-800 to-secondary overflow-hidden">
       {/* Background patterns */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 border border-white/20 rounded-full" />
@@ -33,11 +33,12 @@ const EnhancedCTASection: React.FC = () => {
           
           {/* Main heading */}
           <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Thread By Thread, Leaf By Leaf,
+            Thread By Thread, <br />
+            Leaf By Leaf,
             <br />
-            <span className="text-green-300">We Weave A Tapestry</span>
+            We Weave A Tapestry of
             <br />
-            Of Holistic Living
+            <span className="text-lime-300">Holistic Living</span>
           </h2>
           
           {/* Subtitle */}
@@ -49,19 +50,19 @@ const EnhancedCTASection: React.FC = () => {
           {/* Statistics */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12 max-w-2xl mx-auto">
             <div className="text-center group">
-              <div className="text-4xl font-bold text-green-300 mb-2 group-hover:scale-110 transition-transform">
+              <div className="text-4xl font-bold text-lime-300 mb-2 group-hover:scale-110 transition-transform">
                 500+
               </div>
               <div className="text-green-100 text-sm">Happy Families</div>
             </div>
             <div className="text-center group">
-              <div className="text-4xl font-bold text-green-300 mb-2 group-hover:scale-110 transition-transform">
+              <div className="text-4xl font-bold text-lime-300 mb-2 group-hover:scale-110 transition-transform">
                 4+
               </div>
               <div className="text-green-100 text-sm">Completed Projects</div>
             </div>
             <div className="text-center group">
-              <div className="text-4xl font-bold text-green-300 mb-2 group-hover:scale-110 transition-transform">
+              <div className="text-4xl font-bold text-lime-300 mb-2 group-hover:scale-110 transition-transform">
                 100%
               </div>
               <div className="text-green-100 text-sm">Customer Satisfaction</div>
@@ -95,7 +96,7 @@ const EnhancedCTASection: React.FC = () => {
           
           {/* Trust indicators */}
           <div className="mt-12 pt-8 border-t border-white/20">
-            <p className="text-green-200 text-sm mb-4">Trusted by leading families across the region</p>
+            <p className="text-lime-300 text-sm mb-4">Trusted by leading families across the region</p>
             <div className="flex justify-center items-center gap-8 opacity-60">
               <div className="text-white text-sm">🏆 Award Winning</div>
               <div className="text-white text-sm">🌱 Eco Certified</div>

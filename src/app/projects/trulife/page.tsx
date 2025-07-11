@@ -35,8 +35,8 @@ const TruLife = () => {
             <div className="w-full flex-col justify-start items-start inline-flex gap-3">
               <div className="flex justify-start items-center gap-4">
                 <div className="relative z-10 Header justify-center flex flex-col items-center gap-4 fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-lime-100 text-lime-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
             About Project
           </div>
         </div>
@@ -110,8 +110,8 @@ const TruLife = () => {
       <AnimatedSection animation="slide-in-left" className="w-full flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-14 sm:py-20 gap-8 sm:gap-36 bg-white">
         <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-4 sm:gap-12 fade-in-left">
           <div className="relative z-10 Header justify-start flex flex-col items-start gap-4 fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-lime-100 text-lime-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
             Project Highlights
           </div>
           <h2 className="text-3xl sm:text-4xl text-black font-bold">
@@ -140,8 +140,8 @@ const TruLife = () => {
       <AnimatedSection animation="fade-in" className="ClubAmenities relative w-full flex flex-col items-start justify-start self-stretch px-6 sm:px-40 py-20 gap-8 sm:gap-12 bg-white overflow-hidden">
         <FloatingElements variant="dots" density="low" />
         <div className="relative z-10 Header justify-start flex flex-col items-start gap-4 fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-lime-100 text-lime-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
             Connectivity
           </div>
           <h2 className="text-3xl sm:text-4xl text-black font-bold text-center">
@@ -159,8 +159,8 @@ const TruLife = () => {
         </p>
         
         <div className="relative z-10 Header justify-start flex flex-col items-start gap-4 fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-lime-100 text-lime-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
             Location Map
           </div>
           <h2 className="text-3xl sm:text-4xl text-black font-bold text-center">
@@ -201,8 +201,8 @@ const TruLife = () => {
         <FloatingElements variant="shapes" density="low" />
         
         <div className="relative z-10 Header justify-center flex flex-col items-center gap-4 fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-lime-100 text-lime-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <div className="w-2 h-2 bg-lime-400 rounded-full animate-pulse" />
             Explore More
           </div>
           <h2 className="text-3xl sm:text-5xl text-lime-900 font-bold text-center">
