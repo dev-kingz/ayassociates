@@ -27,17 +27,19 @@ const TruLife = () => {
     <div className="flex grow flex-col items-center self-stretch overflow-x-hidden">
       <TrulifeHeaderCarousel />
       
-      <AnimatedSection animation="fade-in" className="About relative py-16 flex flex-col items-center justify-center bg-gradient-to-br from-white via-green-50/20 to-gray-50 gap-5 sm:gap-12 overflow-hidden">
+      <AnimatedSection animation="fade-in" className="About relative py-20 flex flex-col items-center justify-center bg-gradient-to-br from-white via-green-50/20 to-gray-50 gap-8 sm:gap-16 overflow-hidden">
         <FloatingElements variant="dots" density="low" />
         
         <div className="relative z-10 flex flex-col px-4 sm:px-40 sm:flex-row gap-6 sm:gap-28">
           <div className="flex flex-col gap-6 basis-2/5 fade-in-left">
             <div className="w-full flex-col justify-start items-start inline-flex gap-3">
               <div className="flex justify-start items-center gap-4">
-                <div className="w-[75px] h-[1px] bg-gradient-to-r from-secondary to-green-400" />
-                <div className="text-secondary text-md font-normal font-secondary">
-                  About Project
-                </div>
+                <div className="relative z-10 Header justify-center flex flex-col items-center gap-4 fade-in-up">
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            About Project
+          </div>
+        </div>
               </div>
               <div className="flex self-stretch gap-3">
                 <div className="Text flex text-start justify-start flex-col gap-2">
@@ -54,7 +56,7 @@ const TruLife = () => {
             </div>
           </div>
           <div className="flex flex-col gap-6 basis-3/5 fade-in-right">
-            <p className="text-left text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9">
+            <p className="text-left text-gray-600 text-lg font-normal font-secondary leading-relaxed">
               Picture yourself in one of 131 resort-themed villas, nestled
               around 45,000 sq ft of lush gardens. Choose from a range of 2/3/4
               Bed villas, each meticulously designed with dimensions spanning
@@ -69,7 +71,7 @@ const TruLife = () => {
           </div>
         </div>
         
-        <div className="relative z-10 flex px-4 sm:px-40 flex-wrap items-center justify-center gap-5 ">
+        <div className="relative z-10 flex px-4 sm:px-40 flex-wrap items-center justify-center gap-5 fade-in-up stagger-2">
           <AboutCard
             title="Configuration"
             subTitle="2 | 3 | 4 Bed Villas"
@@ -101,16 +103,21 @@ const TruLife = () => {
             Icon={GrUserWorker}
           />
         </div>
-        <AboutTrulifeCarousel />
+        <div className="relative z-10 fade-in-up">
+          <AboutTrulifeCarousel />
+        </div>
       </AnimatedSection>
       <AnimatedSection animation="slide-in-left" className="w-full flex flex-col sm:flex-row items-center sm:items-start justify-center self-stretch px-14 sm:py-20 gap-8 sm:gap-36 bg-white">
         <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-4 sm:gap-12 fade-in-left">
-          <SectionHeader
-            title="Project Highlights"
-            subTitle="The Appreciation Of Value Addition"
-            titleColor="text-secondary"
-            subTitleColor="text-lime-900"
-          />
+          <div className="relative z-10 Header justify-start flex flex-col items-start gap-4 fade-in-up">
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            Project Highlights
+          </div>
+          <h2 className="text-3xl sm:text-4xl text-black font-bold">
+           The Appreciation Of <span className="text-secondary">Value Addition</span>
+          </h2>
+        </div>
           <ProjectHighlightsAccordian />
         </div>
         <div className="fade-in-right">
@@ -121,7 +128,7 @@ const TruLife = () => {
       <AnimatedSection animation="fade-in" className="ClubAmenities relative w-full flex flex-col items-center justify-center self-stretch px-8 py-14 gap-8 bg-gradient-to-br from-green-50 via-white to-gray-50 overflow-hidden">
         <FloatingElements variant="shapes" density="low" />
         <div className="relative z-10 fade-in-up">
-          <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold justify-center items-center text-center">
+          <h2 className="text-2xl sm:text-4xl text-black font-semibold justify-center items-center text-center">
             The TRULIFE Club <span className="text-secondary">Amenities</span>
           </h2>
         </div>
@@ -130,16 +137,18 @@ const TruLife = () => {
         </div>
       </AnimatedSection>
       
-      <AnimatedSection animation="fade-in" className="ClubAmenities w-full flex flex-col items-start justify-start self-stretch px-6 sm:px-40 py-3 sm:py-14 gap-4 sm:gap-8 bg-white">
-        <div className="fade-in-left">
-          <SectionHeader
-            title="Connectivity"
-            subTitle="Explore the Landmark of Karjat"
-            titleColor="text-secondary"
-            subTitleColor="text-lime-900"
-          />
+      <AnimatedSection animation="fade-in" className="ClubAmenities relative w-full flex flex-col items-start justify-start self-stretch px-6 sm:px-40 py-20 gap-8 sm:gap-12 bg-white overflow-hidden">
+        <FloatingElements variant="dots" density="low" />
+        <div className="relative z-10 Header justify-start flex flex-col items-start gap-4 fade-in-up">
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            Connectivity
+          </div>
+          <h2 className="text-3xl sm:text-4xl text-black font-bold text-center">
+           Explore the <span className="text-secondary">Landmark of Karjat</span>
+          </h2>
         </div>
-        <p className="text-gray-600 text-sm sm:text-md font-normal font-secondary leading-9 fade-in-right">
+        <p className="relative z-10 text-gray-600 text-lg font-normal font-secondary leading-relaxed fade-in-right">
           Envision your holidays in the lap of luxury at TruLife, potentially
           sparking a transformative shift in the priorities of life. Addressing
           the current urban challenges of battling pollution and traffic chaos,
@@ -148,27 +157,33 @@ const TruLife = () => {
           strikes the perfect equilibrium between urban connectivity and serene
           seclusion.
         </p>
-          <h1 className="text-2xl sm:text-4xl text-lime-900 font-medium justify-start text-start items-start fade-in-up">
-            Nearby Locations
-          </h1>
         
-        <div className="fade-in-up flex w-full justify-center">
+        <div className="relative z-10 Header justify-start flex flex-col items-start gap-4 fade-in-up">
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            Location Map
+          </div>
+          <h2 className="text-3xl sm:text-4xl text-black font-bold text-center">
+           Nearby <span className="text-secondary">Locations</span>
+          </h2>
+        </div>
+        
+        <div className="relative z-10 fade-in-up flex w-full justify-center">
           <Image
             src="/gallery/images/Trulife-Resort-Map.png"
             alt="Trulife Resort Map"
             width={500}
             height={500}
-            className="w-full rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="w-full rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300"
           />
         </div>
       </AnimatedSection>
       
-      <div className="Header relative px-4 sm:px-52 py-12 sm:py-16 justify-center flex self-stretch flex-col items-center gap-3 sm:gap-6 bg-gradient-to-br from-green-700 to-green-900 overflow-hidden">
+      <AnimatedSection animation="fade-in" className="Header relative px-4 sm:px-52 py-16 sm:py-20 justify-center flex self-stretch flex-col items-center gap-6 sm:gap-8 bg-gradient-to-br from-green-700 to-green-900 overflow-hidden">
         <FloatingElements variant="particles" density="low" />
         <div className="relative z-10 fade-in-up">
           <h2 className="text-2xl sm:text-4xl font-medium text-white text-center">
-            Want to Know More About the Project? <br />
-            <span className="text-secondary">We Are Here to Help!</span>
+            Want to Know More About the Project? <br />We Are Here to Help!
           </h2>
         </div>
         <Link href="/contact">
@@ -180,15 +195,21 @@ const TruLife = () => {
             Instant Callback
           </Button>
         </Link>
-      </div>
+      </AnimatedSection>
       
-      <AnimatedSection animation="fade-in" className="OtherProjects w-full flex flex-col items-center justify-center self-stretch sm:py-20 gap-8 bg-gradient-to-br from-gray-50 via-white to-green-50/30">
-        <div className="Header justify-center flex flex-col items-center gap-2 sm:gap-3 fade-in-up">
-          <h2 className="text-2xl sm:text-4xl text-lime-900 font-semibold">
+      <AnimatedSection animation="fade-in" className="OtherProjects relative w-full flex flex-col items-center justify-center self-stretch py-20 gap-8 bg-gradient-to-br from-gray-50 via-white to-green-50/30 overflow-hidden">
+        <FloatingElements variant="shapes" density="low" />
+        
+        <div className="relative z-10 Header justify-center flex flex-col items-center gap-4 fade-in-up">
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            Explore More
+          </div>
+          <h2 className="text-3xl sm:text-5xl text-lime-900 font-bold text-center">
             Other <span className="text-secondary">Projects</span>
           </h2>
         </div>
-        <div className="Carousel sm:px-16 fade-in-up stagger-2">
+        <div className="relative z-10 Carousel px-4 sm:px-16 fade-in-up stagger-2">
           <ChooseProjectCarousel />
         </div>
       </AnimatedSection>

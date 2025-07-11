@@ -138,7 +138,7 @@ const EnhancedStatsSection: React.FC = () => {
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
             Our Achievements
           </div>
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Numbers That <span className="text-secondary">Speak</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">

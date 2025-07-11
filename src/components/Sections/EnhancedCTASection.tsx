@@ -32,7 +32,7 @@ const EnhancedCTASection: React.FC = () => {
           </div>
           
           {/* Main heading */}
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Thread By Thread, Leaf By Leaf,
             <br />
             <span className="text-green-300">We Weave A Tapestry</span>

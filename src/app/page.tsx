@@ -76,7 +76,7 @@ export default function Home() {
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
             Our Advantages
           </div>
-          <h2 className="text-4xl sm:text-5xl text-lime-900 font-bold text-center">
+          <h2 className="text-3xl sm:text-4xl text-black font-bold text-center">
             Why Choose <span className="text-secondary">Us?</span>
           </h2>
           <p className="text-center text-lg text-gray-600 max-w-3xl leading-relaxed">
@@ -126,12 +126,20 @@ export default function Home() {
       {/* Products & Services Section */}
       <AnimatedSection animation="slide-in-left" className="w-full flex flex-col lg:flex-row items-center lg:items-start justify-center self-stretch px-8 sm:px-12 py-20 gap-8 lg:gap-36 bg-white">
         <div className="Col-1 flex flex-col items-start justify-start self-stretch gap-8 lg:gap-12 fade-in-left">
-          <SectionHeader
-            title="Our Products & Services"
-            subTitle="Explore Our Diverse Properties"
-            titleColor="text-secondary"
-            subTitleColor="text-lime-900"
-          />
+          <div className="relative z-10 Header justify-start flex flex-col items-start gap-4 fade-in-up">
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            Our Products & Services
+          </div>
+          <h2 className="text-3xl sm:text-4xl text-black font-bold text-center">
+            Explore Our <span className="text-secondary">Diverse Properties</span>
+          </h2>
+          {/* <p className="text-center text-lg text-gray-600 max-w-3xl leading-relaxed">
+            We provide end to end solutions & undertake Design, Approval,
+            Procurement, Construction and Maintenance of all projects with our
+            in house team of experts
+          </p> */}
+        </div>
           <ProductsServicesAccordian />
         </div>
         <div className="fade-in-right">
@@ -144,13 +152,14 @@ export default function Home() {
         {/* Floating Elements */}
         <FloatingElements variant="dots" density="low" />
         
-        <div className="relative z-10 fade-in-up">
-          <SectionHeader
-            title="Choose Your Project"
-            subTitle="Discover Your Ideal Nature Home"
-            titleColor="text-secondary"
-            subTitleColor="text-lime-900"
-          />
+          <div className="relative z-10 Header justify-center flex flex-col items-center gap-4 fade-in-up">
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            Choose Your Project
+          </div>
+          <h2 className="text-3xl sm:text-4xl text-black font-bold text-center">
+           Discover Your<span className="text-secondary"> Ideal Nature Home</span>
+          </h2>
         </div>
         <div className="relative z-10 fade-in-up stagger-2">
           <ChooseProjectCarousel />

@@ -22,15 +22,23 @@ import Link from "next/link";
 import { projectList, aboutList, hospitalityList } from "./ListItems/Lists";
 import { RiArrowRightWideFill } from "react-icons/ri";
 import { FaPhoneAlt } from "react-icons/fa";
+import { cn } from "@/lib/utils";
 
-export function HamburgerMenu() {
+interface HamburgerMenuProps {
+  isScrolled?: boolean;
+}
+
+export function HamburgerMenu({ isScrolled = false }: HamburgerMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClose = () => setIsOpen(false);
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      <SheetTrigger asChild className="h-auto w-7 text-xl text-white sm:hidden">
+      <SheetTrigger asChild className={cn(
+        "h-auto w-7 text-xl sm:hidden transition-colors duration-300",
+        isScrolled ? "text-lime-900" : "text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
+      )}>
         <HamburgerMenuIcon />
       </SheetTrigger>
       <SheetContent className="flex flex-col justify-between w-full">

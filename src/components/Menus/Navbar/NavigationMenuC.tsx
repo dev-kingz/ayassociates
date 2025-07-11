@@ -1,5 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 import {
   NavigationMenu,
@@ -12,20 +13,31 @@ import {
 import { ListItem } from "./ListItems";
 import { projectList, aboutList, hospitalityList } from "./ListItems/Lists";
 
-export function NavigationMenuC() {
+interface NavigationMenuCProps {
+  isScrolled?: boolean;
+}
+
+export function NavigationMenuC({ isScrolled = false }: NavigationMenuCProps) {
+  const textColor = isScrolled 
+    ? "text-lime-900 hover:text-secondary" 
+    : "text-white hover:text-gray-300 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]";
+  
   return (
     <NavigationMenu className="hidden sm:flex justify-center">
       <NavigationMenuList className="gap-7">
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className="text-primary-foreground hover:text-gray-300">
+            <NavigationMenuLink className={cn("transition-colors duration-300 font-medium", textColor)}>
               Home
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-        <NavigationMenuTrigger className="bg-transparent text-primary-foreground text-md rounded-full">
+        <NavigationMenuTrigger className={cn(
+          "bg-transparent text-md rounded-full transition-colors duration-300 font-medium",
+          isScrolled ? "text-lime-900 hover:text-secondary" : "text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] hover:text-gray-300"
+        )}>
             About
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -42,7 +54,10 @@ export function NavigationMenuC() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent text-primary-foreground text-md rounded-full">
+          <NavigationMenuTrigger className={cn(
+            "bg-transparent text-md rounded-full transition-colors duration-300 font-medium",
+            isScrolled ? "text-lime-900 hover:text-secondary" : "text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] hover:text-gray-300"
+          )}>
             Projects
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -59,7 +74,10 @@ export function NavigationMenuC() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent text-primary-foreground text-md rounded-full">
+          <NavigationMenuTrigger className={cn(
+            "bg-transparent text-md rounded-full transition-colors duration-300 font-medium",
+            isScrolled ? "text-lime-900 hover:text-secondary" : "text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] hover:text-gray-300"
+          )}>
             Hospitality
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -77,7 +95,7 @@ export function NavigationMenuC() {
 
         <NavigationMenuItem>
           <Link href="/contact" legacyBehavior passHref>
-            <NavigationMenuLink className="text-primary-foreground hover:text-gray-300">
+            <NavigationMenuLink className={cn("transition-colors duration-300 font-medium", textColor)}>
               Contact Us
             </NavigationMenuLink>
           </Link>
